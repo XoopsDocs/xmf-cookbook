@@ -1,9 +1,9 @@
 ### _XOOPS Documentation Series_
-![logoXoops.jpg](en/assets/logoXoops.jpg)
+![logoXoops.jpg](assets/logoXoops.jpg)
 
 # The XMF Cookbook
 
-Copyright © 2013-2016 XOOPS Project ([www.xoops.org](http://xoops.org))
+Copyright © 2013-2016 XOOPS Project ([www.xoops.org](http://xoops.org))    
 
 
 ##License:
