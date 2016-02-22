@@ -1,0 +1,3 @@
+## JsonWebToken
+
+The `Xmf\Jwt\JsonWebToken` class ...

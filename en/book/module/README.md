@@ -1,0 +1,3 @@
+## Module
+
+The `Xmf\Module` namespace contains classes ...

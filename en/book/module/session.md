@@ -1,0 +1,3 @@
+## Session
+
+The `Xmf\Module\Session` class ...

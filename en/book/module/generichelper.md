@@ -1,0 +1,3 @@
+## GenericHelper
+
+The `Xmf\Module\Helper\GenericHelper` abstract class ...

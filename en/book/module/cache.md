@@ -1,0 +1,3 @@
+## Cache
+
+The `Xmf\Module\Cache` class ...

@@ -1,0 +1,3 @@
+## FilterInput
+
+The `Xmf\FilterInput` class ...

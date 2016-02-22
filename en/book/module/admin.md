@@ -1,0 +1,3 @@
+## Admin
+
+The `Xmf\Module\Admin` class ...

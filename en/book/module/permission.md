@@ -1,0 +1,3 @@
+## Permission
+
+The `Xmf\Module\Permission` class ...

@@ -1,0 +1,3 @@
+## Random
+
+The `Xmf\Random` class ...

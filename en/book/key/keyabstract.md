@@ -1,0 +1,3 @@
+## KeyAbstract
+
+The `Xmf\Key\KeyAbstract` abstract class ...

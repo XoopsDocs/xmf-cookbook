@@ -1,0 +1,3 @@
+## TokenFactory
+
+The `Xmf\Jwt\TokenFactory` class ...

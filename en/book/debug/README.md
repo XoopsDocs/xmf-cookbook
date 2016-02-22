@@ -1,0 +1,3 @@
+## Debug
+
+The `Xmf\Debug` class ...

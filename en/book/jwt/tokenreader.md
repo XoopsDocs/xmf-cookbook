@@ -1,0 +1,3 @@
+## TokenReader
+
+The `Xmf\Jwt\TokenReader` class ...
