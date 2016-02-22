@@ -1,6 +1,10 @@
 # Table of Contents
 
 * [Basic Ingredients](book/ingredients/README.md)
+    * [Namespaces](book/namespaces.md) 
+    * [Autoloading](book/autoloader.md)
+    * [Debugging](book/debugging.md)
+    * [Forward Compatibility](book/compatibility.md)
 * [Module Administration](book/mod-admin/README.md)
 * [Permissions](book/permissions/README.md)
 * [Helpers](book/helpers/README.md)
