@@ -1,3 +1,0 @@
-## Loader
-
-The `Xmf\Loader` class ...
