@@ -3,8 +3,8 @@
 The `Xmf\Jwt\JsonWebToken` class is used to create and decode JSON Web Tokens.
 
 ### new JsonWebToken(*$key*, *$algorithm*)
-Instantiates a new JsonWebToken object, using a \Xmf\Key\KeyAbstract object *$key*, using the specified
-*$algorithm* for signing and verifying. An invalid algorithm will throw \DomainException.
+Instantiates a new JsonWebToken object, using a [Xmf\Key\KeyAbstract](../key/keyabstract.md) object *$key*,
+using the specified *$algorithm* for signing and verifying. An invalid algorithm will throw \DomainException.
 
 The default *$algorithm* is 'HS256', and the currently supplied [TokenFactory](tokenfactory.md)
 and [TokenReader](tokenreader.md) classes are locked to it.

@@ -12,6 +12,6 @@ of metadata can be a useful tool.
 
 ## Metagen in detail
 
-* [Extracting Data](book/metagen/generating.md)
-* [Applying Data](book/metagen/applying.md)
+* [Extracting Data](generating.md)
+* [Applying Data](applying.md)
 

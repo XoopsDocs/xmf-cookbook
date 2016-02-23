@@ -2,5 +2,6 @@
 
 The `Xmf\Module\Helper` namespace ...
 
-* [AbstractHelper](book/module/abstracthelper.md)
-* [GenericHelper](book/module/generichelper.md)
+### Classes in the Xmf\Module\Helper namespace
+* [AbstractHelper](abstracthelper.md)
+* [GenericHelper](generichelper.md)

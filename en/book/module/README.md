@@ -1,10 +1,11 @@
 ## Module
 
-The `Xmf\Module` namespace contains classes ...
+The `Xmf\Module` namespace contains classes providing module specific operations.
 
-* [Admin](book/module/admin.md)
-* [Cache](book/module/cache.md)
-* [Helper](book/module/helper.md)
-* [Permission](book/module/permission.md)
-* [Session](book/module/session.md)
-* [Helper](book/module/helper-ns.md) namespace
+### Classes in the Xmf\Module namespace
+* [Admin](admin.md)
+* [Cache](cache.md)
+* [Helper](helper.md)
+* [Permission](permission.md)
+* [Session](session.md)
+* [Helper namespace](helper-ns.md)
