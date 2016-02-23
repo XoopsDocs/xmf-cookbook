@@ -7,5 +7,11 @@ Metadata is defined as *"data that provides information about other data."* In a
 refer to HTML *meta* tags, which are data which describe a page's content. Metadata can also be indexing
 and tagging data related to application data or content.
 
-While it is usually best to provide tools for content authors to specify custom metadata, automated extraction 
-of metadata can be a useful tool. 
+While it is usually best to provide tools for content authors to specify custom metadata, automated extraction
+of metadata can be a useful tool.
+
+## Metagen in detail
+
+* [Extracting Data](book/metagen/generating.md)
+* [Applying Data](book/metagen/applying.md)
+

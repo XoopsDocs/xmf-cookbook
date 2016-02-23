@@ -1,4 +1,34 @@
 ## StorageInterface
 
-The `Xmf\Key\StorageInterface` interface ...
+The `Xmf\Key\StorageInterface` interface defines the methods used to store and retrieve keys.
 
+The key data is treated as string data. The actual Key class is responsible for any serialization or
+deserialization needed.
+
+The *$name* parameter common to all methods is a string key name, the sysmbolic name of the key to use.
+The *$name* uniquely identifies the key in the key store. The key name should relate to a specific
+application action, or a closely related set of actions.
+
+### save(*$name*, *$data*)
+
+Save key data *$data* under the name *$name*.
+
+Returns true if successful, otherwise false.
+
+### fetch(*$name*)
+
+Fetch key data stored under the name *$name*.
+
+Returns the stored key data if successful, otherwise false.
+
+### exists(*$name*)
+
+Check for the existence of a key under the name *$name*.
+
+Returns true if a key named *$name* exists, otherwise false.
+
+### delete(*$name*)
+
+Delete a any key stored under the name  *$name*.
+
+Returns true if successful, otherwise false.
