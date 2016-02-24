@@ -5,3 +5,15 @@ it isn't practical, or in some cases even possible, to use XDebug in a fancy IDE
 weight approach of echoing variable from deep inside the code comes to the rescue. But, echo and var_export
 have are not the most friendly or productive tools. This is where `Xmf\Debug` is your friend.
 
+```
+    \Xmf\Debug::dump($GLOBALS['xoopsUser']);
+```
+
+Output this when executed:
+
+![dump output](../../assets/xmf_debug_dump_1.png)
+
+Clicking on the dump line opens it:
+
+![dump output](../../assets/xmf_debug_dump_1.png)
+
