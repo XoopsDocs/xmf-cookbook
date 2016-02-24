@@ -5,7 +5,7 @@ The `Xmf\Key\StorageInterface` interface defines the methods used to store and r
 The key data is treated as string data. The actual Key class is responsible for any serialization or
 deserialization needed.
 
-The *$name* parameter common to all methods is a string key name, the sysmbolic name of the key to use.
+The *$name* parameter common to all methods is a string key name, the symbolic name of the key to use.
 The *$name* uniquely identifies the key in the key store. The key name should relate to a specific
 application action, or a closely related set of actions.
 

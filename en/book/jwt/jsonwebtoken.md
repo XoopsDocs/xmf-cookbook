@@ -1,6 +1,8 @@
 ## JsonWebToken
 
 The `Xmf\Jwt\JsonWebToken` class is used to create and decode JSON Web Tokens.
+A full description and specification of JSON Web Tokens can be found in
+[RFC7519](https://tools.ietf.org/html/rfc7519).
 
 ### new JsonWebToken(*$key*, *$algorithm*)
 Instantiates a new JsonWebToken object, using a [Xmf\Key\KeyAbstract](../key/keyabstract.md) object *$key*,

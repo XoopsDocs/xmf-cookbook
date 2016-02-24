@@ -32,7 +32,7 @@ Available type are:
 | FLOAT or DOUBLE | floating point number |
 | INTEGER or INT | an integer |
 | IP | a valid IP address |
-| PATH | a filesystem path |
+| PATH | a filesystem or web path |
 | STRING | a string |
 | USERNAME | Username |
 | WEBURL | a web URL |

@@ -3,7 +3,7 @@
 The `Xmf\Jwt\KeyFactory` class is a factory used to build key objects for use in
 a [JsonWebToken](jsonwebtoken.md) object.
 
-### :KeyFactory:build(*$keyName*)
+### KeyFactory:build(*$keyName*)
 
 Returns a `Xmf\Key\Basic` key object for JWT use based on default choices. If the key, specified by name
 in *$keyName*, has not been established, it will be created.
