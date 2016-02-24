@@ -15,5 +15,25 @@ Output this when executed:
 
 Clicking on the dump line opens it:
 
-![dump output](../../assets/xmf_debug_dump_1.png)
+![dump output](../../assets/xmf_debug_dump_2.png)
 
+
+You can dump multiple variable in one line:
+
+```
+    \Xmf\Debug::dump($counter, $output, $handler);
+```
+
+Need to take a look at your inputs?
+
+```
+    \Xmf\Debug::dump($_POST);
+```
+
+How did we get here?
+
+```
+    \Xmf\Debug::backtrace();
+```
+
+Always there, Xmf\Debug can be a handy tool to keep in mind.
