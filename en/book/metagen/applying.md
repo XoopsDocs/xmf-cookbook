@@ -1,20 +1,33 @@
 ## Applying Metadata to an HTML document
 
-### Metagen::assignTitle(string $title);
+### Metagen::assignTitle(*$title*);
 
-assignTitle set the page title
+Set the page *title* tag to *$title*.
 
-### Metagen::assignKeywords(string[] $keywords)
+### Metagen::assignKeywords(*$keywords*)
 
-assignKeywords set the meta keywords tag
+Set the meta *keywords* tag with using the array of keywords in *$keywords*.
 
 
-### Metagen::assignDescription(string $description ) 
+### Metagen::assignDescription(*$description*)
 
-assignDescription set the meta description tag
+Set the meta *description* tag to *$description*.
 
-### Metagen::generateMetaTags(string $title, string $body, integer $count = 20, integer $minLength = 4, integer $wordCount = 100, string[]|null $forceKeys = null  )
+### Metagen::generateMetaTags(*$title*, *$body*)
 
-generateMetaTags - generate and assign all meta tags
+Full form:
+
+`Metagen::generateMetaTags(*$title*, *$body*, *$count*, *$minLength*, *$wordCount*, *$forceKeys*)`
+
+Generate and assign title, keywords and description meta tags, taking the title from *$title*, extracting
+the keywords and description from *$body*.
+
+The maximum number of key words is *$count*, which defaults to 20.
+Only words at least *$minlen*, which defaults to 4, will be considered.
+
+No more than *$wordCount* words, default is 100, will be included in the description.
+
+If specified, the array of words in *$forceKeys* will be used as keywords. Those words will count
+toward the *$count*.
 
 

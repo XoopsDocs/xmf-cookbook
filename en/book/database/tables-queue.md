@@ -12,16 +12,3 @@ and getLastErrNo().
 
 ### queueReset()
 Clears the work queue without processing.
-
-### renderTableCreate(*$table*, *$prefixed* = false)
-
-Creates the SQL needed to create the table named *$table* and returns that string. If *$prefixed* is
-specified as *true*, the table name in the SQL returned will include the system defined prefix.
-
-This method does not directly influence the work queue, but provides access to the modified table
-definitions that were created while building the queue. This direct access to the TABLE CREATE DDL
-may be useful in some situations.
-
-Returns SQL to create the *$table* as a string on success, or *false* on error. Additional information
-may be available using getLastError() and getLastErrNo().
-

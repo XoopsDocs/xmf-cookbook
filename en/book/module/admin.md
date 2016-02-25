@@ -11,7 +11,7 @@ or a native system class if it is already compatible with `Xmf\Module\Admin`.
 
 ### addConfigBoxLine(*$value*, *$type*)
 
-Add line to the config box.
+Add a line to the config box.
 
 This chart shows the minimal set of acceptable types and value expectation.
 Additional types may be available, but may produces different results based on the underlying XOOPS version.
@@ -24,58 +24,6 @@ Additional types may be available, but may produces different results based on t
 | module  | value is string module name, or array(module, type). If module is installed an accept message displays, otherwise a warning (if *$value*[1]=='warning') or an error displays. |
 
 Returns *true* on success, otherwise *false*.
-
-### addInfoBox(*$title*)
-Add Info box with the specified *$title*.
-
-Returns *true* on success, otherwise *false*.
-
-### addInfoBoxLine(*$text*, *$type*, *$color*)
-
-Add line with text *$text* to the info box, with *$type* and *$color*
-
-Returns *true* on success, otherwise *false*.
-
-### addItemButton(*$title*, *$link*, *$icon*, *$extra*)
-
-Add Item button for displayButtonBox()
-
-Returns *true* on success, otherwise *false*.
-
-### renderButton(*$position*, *$delimiter*)
-
-Return HTML string with all item buttons rendered.
-
-### displayButton(*$position*, *$delimiter*)
-
-Display all item buttons
-
-### renderInfoBox()
-
-Return HTML string of rendered InfoBox.
-
-### displayInfoBox( )
-
-Display the rendered InfoBox.
-
-### renderIndex()
-
-Return HTML string of rendered index page for admin
-
-### displayIndex()
-
-Display the rendered index page for admin
-
-
-### displayNavigation( string $menu = '' )
-Display the navigation menu
-
-### renderAbout(*$logo_xoops*)
-
-Return HTML string of rendered about page
-
-### displayAbout(*$logo_xoops*)
-Display the rendered about  page
 
 ### addConfigError(*$value*)
 
@@ -98,6 +46,57 @@ Returns *true* on success, otherwise *false*.
 ### addConfigModuleVersion(*$moddir*, *$minversion*)
 Check for installed module and version and add a config box line, an accept message if module *$moddir* is
 installed and is version *$minversion* or higher, otherwise an error message.
+
+### addInfoBox(*$title*)
+Add Info box with the specified *$title*.
+
+Returns *true* on success, otherwise *false*.
+
+### addInfoBoxLine(*$text*, *$type*, *$color*)
+
+Add a line with text *$text* to the info box, with *$type* and *$color*
+
+Returns *true* on success, otherwise *false*.
+
+### renderInfoBox()
+
+Return HTML string of rendered InfoBox.
+
+### displayInfoBox( )
+
+Display the rendered InfoBox.
+
+### addItemButton(*$title*, *$link*, *$icon*, *$extra*)
+
+Add an Item button for displayButtonBox()
+
+Returns *true* on success, otherwise *false*.
+
+### renderButton(*$position*, *$delimiter*)
+
+Return HTML string with all item buttons rendered.
+
+### displayButton(*$position*, *$delimiter*)
+
+Display all item buttons
+
+### renderIndex()
+
+Return HTML string of rendered index page for admin
+
+### displayIndex()
+
+Display the rendered index page for admin
+
+### displayNavigation(*$menu*)
+Display the navigation menu for the page *$menu*
+
+### renderAbout(*$logo_xoops*)
+
+Return HTML string of rendered about page
+
+### displayAbout(*$logo_xoops*)
+Display the rendered about  page
 
 ## Static methods only available in Xmf\Module\Admin
 

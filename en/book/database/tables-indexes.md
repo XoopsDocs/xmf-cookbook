@@ -43,7 +43,7 @@ and getLastErrNo().
 ### dropIndexes(*$table*)
 
 Add drop index for all (non-PRIMARY) keys for a *$table* to the work queue. This can be used to clean up indexes
-with automaticly generated names.
+with automatically generated names.
 
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().

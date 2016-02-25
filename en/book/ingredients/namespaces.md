@@ -10,7 +10,7 @@ Without namespaces, all entities defined in a PHP program end up in a global spa
 the PHP built in class `ArrayObject` is in the global space.
 
 This name is pretty well known to PHP programmers, and is documented in the PHP manual, but let's
-imagine that we didn't know about it, and wrote our new cool class like this:
+imagine that we did not know about it, and wrote our new cool class like this:
 
 ```
 <?php
@@ -108,7 +108,7 @@ Now, `$object1` is an instance of our object, while `$object2` is an instance of
 Yes, that can get confusing. So PHP best practice suggestions discourages creating this sort of
 ambiguous situation, especially with the built-in class names.
 
-### Xmf Namepace
+### Xmf Namespace
 
 All Xmf classes are in the `Xmf` namespace. Some classes are levels of namespaces. For example,
 the [module](../module/README.md) related classes are in the `Xmf\Module` namespace.

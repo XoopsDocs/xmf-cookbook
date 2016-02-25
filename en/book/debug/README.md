@@ -3,7 +3,7 @@
 The `Xmf\Debug` class contains methods to assist in debugging.
 
 ### Debug::dump( mixed $var )
-Dump one or more variables
+Dump one or more variables. Multiple arguments can be specified, and each will be dumped.
 
 ### Debug::backtrace( )
-Display debug backtrace
+Display debug backtrace.

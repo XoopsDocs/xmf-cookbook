@@ -1,10 +1,10 @@
 # Yaml
-`Xmf\Yaml` supports serializing data to YAML, and unserializing YAML to PHP data.
+`Xmf\Yaml` supports serializing data to YAML, and deserializing YAML to PHP data.
 
 [YAML](http://yaml.org/) is a markup language designed for human friendliness. It is useful for configuration
 files, database schemas, data import/export and more.
 
-## Basic YAML Serializing and Unserializing
+## Basic YAML Serializing and Deserializing
 
 ### Yaml::dump( mixed $var, integer $inline = 4, integer $indent = 4 )
 Dump an PHP array as a YAML string
@@ -34,7 +34,7 @@ with a *.php* extension.
 If directly accessed by the web server, such a wrapped file will be executed as PHP, producing blank output.
 
 Inside the wrapped file, the YAML document is marked in the file with a line consisting of three dashes ("---")
-and ending with a line consisting three dots ("...") as documented in the 
+and ending with a line consisting three dots ("...") as documented in the
 [YAML specifications](http://yaml.org/spec/1.1/#id857577).
 
 The base functions do not support the document within a stream format. The wrapped forms support a single

@@ -24,7 +24,7 @@ Available type are:
 | Type | Allowed value |
 |------|---------------|
 | ALPHANUM | Alphanumeric |
-| ARRAY | Recusively cleans each element |
+| ARRAY | Recursively cleans each element |
 | BASE64 | Base64 encoded |
 | BOOLEAN or BOOL | true or false |
 | CMD | Command - only characters A-Z, 0-9, underscore, dash and period, forced to lower case. |
