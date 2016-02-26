@@ -1,22 +1,35 @@
 ## Cache
 
-The `Xmf\Module\Cache` class is a helper for using the system cache for module related data.
-The underlying cache is a key value store. This helper wraps the
+The `Xmf\Module\Helper\Cache` class is a module aware helper for using the system cache for module
+related data. The underlying cache is a key value store. This helper isolates the module related data
+by applying a module specific prefix to each key.
 
-### new Cache()
+`Xmf\Module\Helper\Cache` extends [Xmf\Module\Helper\AbstractHelper](abstracthelper.php).
 
-public boolean
-#write( string $key, mixed $value, integer|null $ttl = null )
-Write a value for a key to the cache
+### new Cache(*$dirname*)
 
-public mixed
-#read( string $key )
-Read value for a key from the cache
+Creates the cache helper for the module specified by name as *$dirname*.
+If the string *$dirname* is empty, the current module in XOOPS will be used.
 
-public
-#delete( string $key )
-Delete a key from the cache
+### write(*$key*, *$value*, *$ttl*)
 
-public mixed
-#cacheRead( string $key, callable $regenFunction, integer|null $ttl = null, mixed $args = null )
-cache block wrapper
+Write the value *$value* for a key named *$key* to the cache, with the specified number of seconds ir *$ttl*
+as the time to live.
+
+### read(*$key*)
+
+Read value for the key named *$key* from the cache.
+
+### delete(*$key*)
+
+Deletes any key named *$key* from the cache.
+
+### cacheRead(*$key*, *$regenFunction*, *$ttl*, *$args*)
+
+The cacheRead() method combines reading and any needed regenerating of the cache entry into a single call.
+
+First, it attempts to read the cache entry for *$key*, and returns it if found.
+
+If the cache read fails, it calls the specified callable, *$regenFunction*, passing to it any
+variable arguments,  *$args*. It writes the return of *$regenFunction* to the cache for *$key*
+with time to live *$ttl*, and returns the new cached value to the caller.

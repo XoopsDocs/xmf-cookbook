@@ -16,7 +16,7 @@ The [Xmf\Jwt namespace](../jwt/README.md) reference section details the JWT supp
 In practical terms, JWT allows a script to send information from a server to a client, and then have
 that information returned from the client, and be confident the information is unchanged. This is
 accomplished by signing the token with a secret key. Note that the signing is for protection against
-tampering or corruption, not for encryption. The data in a JSON web token can be easily seen. It
+tampering or corruption, not for encryption. The data in a JWT can be viewed easily. It
 is only Base64 encoded for 7 bit path safety in transit.
 
 One common use of a JWT is as stateless authentication tokens.
@@ -33,8 +33,8 @@ expiring it, that only complicates the issues. The Ajax interaction is an inhere
 of multiple processes. There is no reliable way to refresh a token, as the scripts do not neccessarily
 follow any order in processing. (The first in, may be the last to complete for example.)
 
-The real issue is there is no way to verify that the token is actually associated with Ajax process.
-The token only shows a relationship to the user, not to the process that issued it.
+The real issue is there is no way to verify that the token is actually associated with an expected Ajax
+process. The token only shows a relationship to the user, not to the process that issued it.
 With some care, this weakness could be exploited by something similar to CSRF, but intra-site
 instead of cross-site. A token issued in one context is used in another, unintended way. An administrator's
 click could be redirected to perform an unintended malicious action. There are additional details to
@@ -66,8 +66,8 @@ If invoked by the browser, it generates a JWT and returns a simple page with one
 Clicking the button will invoke the same script through Ajax, including the JWT in the headers.
 
 When invoked through Ajax, the script verifies the token from the header. Tokens are only valid
-for 2 minutes after being issued. This might be too short for a real application, but it demonstrates
-expiration quickly.
+for 2 minutes after being issued. This might be too short for a real application, but it quickly
+demonstrates expiration.
 
 This example script can be copied into almost any module directory in XOOPS and run. Watching the
 interaction through the javascript console or developer tools demonstrates the full cycle of interaction.
