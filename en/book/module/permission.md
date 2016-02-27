@@ -46,7 +46,10 @@ groups identified in the array *$groups*.
 
 Delete the permission named *$gperm_name* for the item identified by *$gperm_itemid* for all groups.
 
-This is used when the item *$gperm_itemid* is deleted.
+Alternately, *$gperm_name* can be an array of permission names, and all the named permissions for the
+specified item will be deleted for all groups.
+
+The intended use of this method is to in response to the item *$gperm_itemid* being deleted.
 
 public object
 ### getGroupSelectFormForItem(*$gperm_name*, *$gperm_itemid*, *$caption*, *$name*, *$include_anon*, *$size*, *$multiple*)

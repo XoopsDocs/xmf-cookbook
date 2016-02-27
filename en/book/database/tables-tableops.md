@@ -7,7 +7,7 @@ Queue instruction needed to rename a table named *$table* to *$newName* to the w
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
 
-### setTableOptions(*$table*, array *$options*)
+### setTableOptions(*$table*, *$options*)
 
 Queue instruction needed to alter the table named *$table* with attributes specified in the array *$options*
 to the work queue.
@@ -24,7 +24,7 @@ Queue instruction needed to drop the table named *$table* to the work queue.
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
 
-### copyTable(*$table*, *$newTable*, *$withData* = false)
+### copyTable(*$table*, *$newTable*, *$withData*)
 
 Loads schema for a table named *$table* from database, and adds a new table named *$newTable* with that
 same schema to the queue.

@@ -23,7 +23,7 @@ Available type are:
 
 | Type | Allowed value |
 |------|---------------|
-| ALPHANUM | Alphanumeric |
+| ALPHANUM or ALNUM | Alphanumeric |
 | ARRAY | Recursively cleans each element |
 | BASE64 | Base64 encoded |
 | BOOLEAN or BOOL | true or false |

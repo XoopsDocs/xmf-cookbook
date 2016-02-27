@@ -5,11 +5,37 @@
     * [Autoloading](book/ingredients/autoloader.md)
     * [Debugging](book/ingredients/debugging.md)
     * [Forward Compatibility](book/ingredients/compatibility.md)
-* [Module Administration](book/mod-admin/README.md)
-* [Permissions](book/permissions/README.md)
-* [JSON Web Tokens](book/jsonwebtokens/README.md)
-* [Helpers](book/helpers/README.md)
-* [Database Migrations](book/migrations/README.md)
+* [Recipies](book/recipes/README.md)
+    * [Introducing Module Helpers](book/recipes/modhelper.md)
+        * Simplify Reading Module Configs
+        * Easy Access to Module Object
+    * [Using the Permission Helper](book/recipes/permission.md)
+        * [Checking Permissions](book/recipes/perm-check.md)
+            * Does the User Have Permission for an Item?
+            * Leave if the User Does Not Have Permission
+        * [Managing Item Permissions](book/recipes/perm-form.md)
+            * Assign Permissions to an Item From a Form
+            * Clean Up Permissions When an Item is Deleted
+    * [Using the Session Helper](book/recipes/session.md)
+        * Save and Retrieve Context
+    * [Use JSON Web Tokens](book/recipes/jsonwebtokens.md)
+        * Ajax Protection with JWT
+    * [Migrating a Database](book/recipes/migrations.md)
+        * Rename a Database Table
+        * Add a Column to a Table
+    * [Module Admin Pages](book/recipes/modadmin.md)
+        * [Hide and Seek with Icons](book/recipes/modadm-icons.md)
+            * Where are the icons?
+            * menu.php icons
+        * [Standard Admin Pages](book/recipes/modadm-pages.md)
+            * index.php conversion
+            * pages.php conversion
+    * [Manage Metadata](book/recipes/metagen.md)
+        * SEO Slugs
+        * Generate a Teaser
+        * Generate Keyword Lists
+        * Generate a Search Summary
+    * [Highlighting Content](book/recipes/highlight.md)
 * [Reference](book/reference/README.md)
     * [Database](book/database/README.md)
         * [TableLoad](book/database/tableload.md)
@@ -25,17 +51,17 @@
     * [FilterInput](book/filterinput/README.md)
     * [Highlighter](book/highlighter/README.md)
     * [IPAddress](book/ipaddress/README.md)
+    * [Jwt](book/jwt/README.md)
+        * [JsonWebToken](book/jwt/jsonwebtoken.md)
+        * [KeyFactory](book/jwt/keyfactory.md)
+        * [TokenFactory](book/jwt/tokenfactory.md)
+        * [TokenReader](book/jwt/tokenreader.md)
     * [Key](book/key/README.md)
         * [ArrayStorage](book/key/arraystorage.md)
         * [Basic](book/key/basic.md)
         * [FileStorage](book/key/filestorage.md)
         * [KeyAbstract](book/key/keyabstract.md)
         * [StorageInterface](book/key/storageinterface.md)
-    * [Jwt](book/jwt/README.md)
-        * [JsonWebToken](book/jwt/jsonwebtoken.md)
-        * [KeyFactory](book/jwt/keyfactory.md)
-        * [TokenFactory](book/jwt/tokenfactory.md)
-        * [TokenReader](book/jwt/tokenreader.md)
     * [Language](book/language/README.md)
     * [Metagen](book/metagen/README.md)
         * [Extracting Data](book/metagen/generating.md)

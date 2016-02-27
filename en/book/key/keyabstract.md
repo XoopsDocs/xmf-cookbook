@@ -1,6 +1,6 @@
 ## KeyAbstract
 
-The `Xmf\Key\KeyAbstract` is an abstract class defines a Key.
+The `Xmf\Key\KeyAbstract` is an abstract class that defines a Key.
 
 The concrete implementations of KeyAbstract are responsible for
 

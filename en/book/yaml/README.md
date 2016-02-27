@@ -1,24 +1,28 @@
 # Yaml
 `Xmf\Yaml` supports serializing data to YAML, and deserializing YAML to PHP data.
 
-[YAML](http://yaml.org/) is a markup language designed for human friendliness. It is useful for configuration
-files, database schemas, data import/export and more.
+[YAML](http://yaml.org/) is a markup language designed for human friendliness. It is useful for
+configuration files, database schemas, data import/export and more.
 
 ## Basic YAML Serializing and Deserializing
 
-### Yaml::dump( mixed $var, integer $inline = 4, integer $indent = 4 )
-Dump an PHP array as a YAML string
+### Yaml::dump(*$var*)
 
-### Yaml::load( string $yamlString )
-Load a YAML string into a PHP array
+Dump an PHP array *$var* as a YAML string
+
+### Yaml::load(*$yamlString*)
+
+Load a YAML string *$yamlString* into a PHP array
 
 ## Saving to and Reading from Files
 
-### Yaml::read( string $yamlFile )
-Read a file containing YAML into a PHP array
+### Yaml::read(*$yamlFile*)
 
-### Yaml::save( array $var, string $yamlFile, integer $inline = 4, integer $indent = 4 )
-Save a PHP array as a YAML file
+Read the file *$yamlFile* containing YAML into a PHP array
+
+### Yaml::save(*$var*, *$yamlFile*)
+
+Save a PHP array *$var* as a YAML file *$yamlFile*.
 
 ## Wrapped YAML
 
@@ -41,14 +45,14 @@ The base functions do not support the document within a stream format. The wrapp
 marked document with a YAML stream. If a stream does not contain a marked document, the entire stream will be
 treated as a YAML stream.
 
-### Yaml::dumpWrapped( mixed $var, integer $inline = 4, integer $indent = 4 )
-Dump an PHP array as a YAML string with a php wrapper
+### Yaml::dumpWrapped(*$var*)
+Dump an PHP array *$var*as a YAML string with a php wrapper
 
-### Yaml::loadWrapped( string $yamlString )
-Load a YAML string with a php wrapper into a PHP array
+### Yaml::loadWrapped(*$yamlString*)
+Load a YAML string *$yamlString* with a php wrapper into a PHP array
 
-### Yaml::readWrapped( string $yamlFile )
-Read a file containing YAML with a php wrapper into a PHP array
+### Yaml::readWrapped(*$yamlFile*)
+Read a file *$yamlFile* containing YAML with a php wrapper into a PHP array
 
-### Yaml::saveWrapped( array $var, string $yamlFile, integer $inline = 4, integer $indent = 4 )
-Save a PHP array as a YAML file with a php wrapper
+### Yaml::saveWrapped(*$var*, *$yamlFile*)
+Save a PHP array *$var* as a YAML file *$yamlFile* with a php wrapper

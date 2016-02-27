@@ -4,7 +4,7 @@ As a module grows, so does its database requirements. There have been many strat
 the inevitable database changes, from custom .sql files to handwritten queries. `Xmf\Database\Tables`
 is an object oriented approach to a standard solution to this common problem.
 
-### Rename a database table
+### Rename a Database Table
 
 This scenario references a module called 'pedigree' and we are going to define an update function
 that will rename an old table named 'eigenaar' to a standardized name of 'pedigree_owner'.
@@ -54,7 +54,7 @@ function xoops_module_update_pedigree()
 }
 ```
 
-### Add a column to a table
+### Add a Column to a Table
 
 Let's extend the previous example and suppose we also want to add a column, named
 'registrar_code', as a varchar(24) at the same time. Here is the new function:

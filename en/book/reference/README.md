@@ -1,6 +1,6 @@
 ## Reference
 
-This is a detailed overview of all of the XMF classes.
+This is a detailed overview of all of the XMF classes as of release 1.0.
 
 ### Contents
 
@@ -35,13 +35,13 @@ This is a detailed overview of all of the XMF classes.
     * [Applying Data](../metagen/applying.md)
 * [Module](../module/README.md)
     * [Admin](../module/admin.md)
-    * [Cache](../module/cache.md)
     * [Helper](../module/helper.md)
-    * [Permission](../module/permission.md)
-    * [Session](../module/session.md)
     * [Helper](../module/helper-ns.md)
         * [AbstractHelper](../module/abstracthelper.md)
+        * [Cache](../module/cache.md)
         * [GenericHelper](../module/generichelper.md)
+        * [Permission](../module/permission.md)
+        * [Session](../module/session.md)
 * [Random](../random/README.md)
 * [Request](../request/README.md)
 * [Yaml](../yaml/README.md)
