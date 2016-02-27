@@ -79,3 +79,4 @@
     * [Request](book/request/README.md)
     * [Utilities](book/utilities/README.md)
     * [Yaml](book/yaml/README.md)
+* [Credits](book/credits.md)

@@ -46,7 +46,7 @@ marked document with a YAML stream. If a stream does not contain a marked docume
 treated as a YAML stream.
 
 ### Yaml::dumpWrapped(*$var*)
-Dump an PHP array *$var*as a YAML string with a php wrapper
+Dump an PHP array *$var* as a YAML string with a php wrapper
 
 ### Yaml::loadWrapped(*$yamlString*)
 Load a YAML string *$yamlString* with a php wrapper into a PHP array
