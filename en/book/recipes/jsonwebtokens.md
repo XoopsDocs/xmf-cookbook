@@ -116,16 +116,23 @@ $claims = array_merge($assertClaims, array('data' => 'mydata'));
 
 $token = TokenFactory::build('test', $claims, 120);
 
-// script thanks to Andrew Church on http://stackoverflow.com/questions/7433556/
 $script = <<<EOT
 <script>
 function myFunction()
 {
     \$.ajax({
         url: 'ajax.php',
-        dataType: 'jsonp',
+        dataType: 'json',
         beforeSend: function (xhr, settings) {
-            xhr . setRequestHeader('Authorization', 'Bearer ' + '{$token}');
+            xhr.setRequestHeader('Authorization', 'Bearer ' + '{$token}');
+        },
+        success: function (data) {
+            // do something useful
+            console.log(data.saw);
+        },
+        error: function() {
+            // communicate issue to user
+            alert('error');
         }
     });
 }

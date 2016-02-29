@@ -16,12 +16,11 @@ Returns a Helper instance or false on error.
 
 Returns a XoopsModule object for the module represented by this Helper.
 
-### getConfig(*$name*)
+### getConfig(*$name*, *$default*)
 
 Returns the value of the module config item *$name*, or an array of all config items
-if *$name* is empty or not specified.
-
-Returns *null* if a specified config item does not exist.
+if *$name* is empty or not specified. If config item *$name* does not exist *$default*,
+null if not specified, is returned.
 
 ### getHandler(*$name*)
 
