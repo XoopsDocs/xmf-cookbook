@@ -47,7 +47,7 @@ function xoops_module_update_pedigree()
     $migrate = new \Xmf\Database\Tables();
     if($migrate->useTable('eigenaar')) { // if this returns false, there is no table
         $migrate->renameTable('eigenaar', 'pedigree_owner');
-        if(!$migrate->queueExecute()) {
+        if(!$migrate->executeQueue()) {
 	        echo '<br />' . _AM_PED_UPGRADEFAILED  . ' ' . $migrate->getLastError();
 	    }
     }
@@ -66,7 +66,7 @@ function xoops_module_update_pedigree()
     if($migrate->useTable('eigenaar')) {
         $migrate->renameTable('eigenaar', 'pedigree_owner');
         $migrate->addColumn('pedigree_owner', 'registrar_code', "varchar(24) NOT NULL DEFAULT ''");
-        if(!$migrate->queueExecute()) {
+        if(!$migrate->executeQueue()) {
 	        echo '<br />' . _AM_PED_UPGRADEFAILED  . ' ' . $migrate->getLastError();
 	    }
     }

@@ -17,6 +17,11 @@
 * [Migrating a Database](migrations.md)
     * Rename a Database Table
     * Add a Column to a Table
+* [Loading Initial Data](loaddata.md)
+    * Simple Table Loading
+    * Apply a Transform
+    * Save Table Data in YAML
+    * Case Study
 * [Module Admin Pages](modadmin.md)
     * [Hide and Seek with Icons](modadm-icons.md)
         * Where are the icons?

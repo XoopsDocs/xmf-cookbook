@@ -24,7 +24,7 @@ A [primary key](https://en.wikipedia.org/wiki/Unique_key#Defining_primary_keys_i
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
 
-### createIndex(*$name*, *$table*, *$column*, *$unique*)
+### addIndex(*$name*, *$table*, *$column*, *$unique*)
 
 Queue instruction needed to create a new index named *$name* to *$table* with definition *$column* to the work queue.
 The *$column* string may be a single column name or a comma separated list of column names.

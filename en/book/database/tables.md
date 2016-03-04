@@ -12,7 +12,7 @@ current state while determining the work to be done (i.e. it will not attempt a 
 All methods with create or alter tables, columns, indexes or data require a table that is already
 established using `addTable()` or `useTable()`.
 
-No alterations are made to the database until the work queue is executed by invoking `queueExecute()`.
+No alterations are made to the database until the work queue is executed by invoking `executeQueue()`.
 
 * [Getting Started](tables-start.md)
 * [Table Operations](tables-tableops.md)
