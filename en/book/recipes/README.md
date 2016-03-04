@@ -1,4 +1,4 @@
-## XMF Recipies
+## XMF Recipes
 
 * [Introducing Module Helpers](modhelper.md)
     * Simplify Reading Module Configs
@@ -29,7 +29,7 @@
     * [Standard Admin Pages](modadm-pages.md)
         * index.php conversion
         * pages.php conversion
-* [Manage Metadata](metagen.md)
+* [Feature Your Content](metagen.md)
     * SEO Slugs
     * Generate a Teaser
     * Generate Keyword Lists
