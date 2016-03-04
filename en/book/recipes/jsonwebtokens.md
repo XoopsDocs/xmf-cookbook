@@ -30,7 +30,7 @@ submitted from some other source. This provides protection from cross site reque
 When using Ajax requests, the *nonce* token is a bad fit. First, the token is sent to the browser one
 time, but the browser may initiate many Ajax transactions. While it is possible to check the token without
 expiring it, that only complicates the issues. The Ajax interaction is an inherently asynchronous set
-of multiple processes. There is no reliable way to refresh a token, as the scripts do not neccessarily
+of multiple processes. There is no reliable way to refresh a token, as the scripts do not necessarily
 follow any order in processing. (The first in, may be the last to complete for example.)
 
 The real issue is there is no way to verify that the token is actually associated with an expected Ajax

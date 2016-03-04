@@ -5,7 +5,7 @@
     * [Autoloading](book/ingredients/autoloader.md)
     * [Debugging](book/ingredients/debugging.md)
     * [Forward Compatibility](book/ingredients/compatibility.md)
-* [Recipies](book/recipes/README.md)
+* [Recipes](book/recipes/README.md)
     * [Introducing Module Helpers](book/recipes/modhelper.md)
         * Simplify Reading Module Configs
         * Easy Access to Module Object
@@ -82,6 +82,5 @@
             * [Session](book/module/session.md)
     * [Random](book/random/README.md)
     * [Request](book/request/README.md)
-    * [Utilities](book/utilities/README.md)
     * [Yaml](book/yaml/README.md)
 * [Credits](book/credits.md)
