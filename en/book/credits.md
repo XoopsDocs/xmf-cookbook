@@ -1,6 +1,6 @@
 # Credits
 
-XMF was the brainchild of Luso Poemas, better know in XOOPS circles as *trabis*.
+XMF was the brainchild of Ricardo Costa from Portugal, better known in XOOPS circles as *trabis*.
 
 Recent rework and additions, along with the XMF Cookbook are by Richard Griffith <richard@geekwright.com>
 

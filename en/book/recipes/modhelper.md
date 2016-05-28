@@ -15,14 +15,15 @@ $module_handler = xoops_gethandler('module');
 $module         = $module_handler->getByDirname('bar');
 $config_handler = xoops_gethandler('config');
 $moduleConfig   = $config_handler->getConfigsByCat(0, $module->getVar('mid'));
-echo "The  current value of 'foo' is: " . $moduleConfig['foo'];
+$value = (isset($moduleConfig['foo']) ? $moduleConfig['foo'] : 'baz';
+echo "The value of 'foo' being used is: " . $value;
 ```
 
 Here is an XMF version that accomplishes the same thing:
 
 ```
 $helper = \Xmf\Module\Helper::getHelper('bar');
-echo "The  current value of 'foo' is: " . $helper->getConfig('foo');
+echo "The value of 'foo' being used is: " . $helper->getConfig('foo', 'baz');
 ```
 
 ### Easy Access to Module Object

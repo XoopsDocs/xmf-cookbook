@@ -14,9 +14,10 @@ If the string *$dirname* is empty, the current module in XOOPS will be used.
 
 Sets a the session variable named *$name* to the value *$value*.
 
-### get($name)
+### get(*$name*, *$default*)
 
-Returns the session variable named *$name*, or *false* on error.
+Returns the session variable named *$name*. If the named variable does not exist, it returns
+*$default*, or *false* if *$default* was not specified.
 
 ### del($name)
 

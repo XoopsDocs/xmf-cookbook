@@ -16,9 +16,10 @@ If the string *$dirname* is empty, the current module in XOOPS will be used.
 Write the value *$value* for a key named *$key* to the cache, with the specified number of seconds ir *$ttl*
 as the time to live.
 
-### read(*$key*)
+### read(*$key*, *$default*)
 
-Read value for the key named *$key* from the cache.
+Read value for the key named *$key* from the cache. If the key does not exist, it returns
+*$default*, or *false* if *$default* was not specified.
 
 ### delete(*$key*)
 

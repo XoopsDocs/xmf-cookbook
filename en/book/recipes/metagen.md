@@ -1,4 +1,4 @@
-## Manage Metadata
+## Feature Your Content
 
 The [Xmf\Metagen](../metagen/README.md) class provides methods to extract and summarize content.
 

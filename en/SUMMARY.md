@@ -5,7 +5,7 @@
     * [Autoloading](book/ingredients/autoloader.md)
     * [Debugging](book/ingredients/debugging.md)
     * [Forward Compatibility](book/ingredients/compatibility.md)
-* [Recipies](book/recipes/README.md)
+* [Recipes](book/recipes/README.md)
     * [Introducing Module Helpers](book/recipes/modhelper.md)
         * Simplify Reading Module Configs
         * Easy Access to Module Object
@@ -23,6 +23,11 @@
     * [Migrating a Database](book/recipes/migrations.md)
         * Rename a Database Table
         * Add a Column to a Table
+    * [Loading Initial Data](book/recipes/loaddata.md)
+        * Simple Table Loading
+        * Apply a Transform
+        * Save Table Data in YAML
+        * Case Study
     * [Module Admin Pages](book/recipes/modadmin.md)
         * [Hide and Seek with Icons](book/recipes/modadm-icons.md)
             * Where are the icons?
@@ -77,6 +82,5 @@
             * [Session](book/module/session.md)
     * [Random](book/random/README.md)
     * [Request](book/request/README.md)
-    * [Utilities](book/utilities/README.md)
     * [Yaml](book/yaml/README.md)
 * [Credits](book/credits.md)

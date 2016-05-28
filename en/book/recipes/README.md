@@ -1,4 +1,4 @@
-## XMF Recipies
+## XMF Recipes
 
 * [Introducing Module Helpers](modhelper.md)
     * Simplify Reading Module Configs
@@ -17,6 +17,11 @@
 * [Migrating a Database](migrations.md)
     * Rename a Database Table
     * Add a Column to a Table
+* [Loading Initial Data](loaddata.md)
+    * Simple Table Loading
+    * Apply a Transform
+    * Save Table Data in YAML
+    * Case Study
 * [Module Admin Pages](modadmin.md)
     * [Hide and Seek with Icons](modadm-icons.md)
         * Where are the icons?
@@ -24,7 +29,7 @@
     * [Standard Admin Pages](modadm-pages.md)
         * index.php conversion
         * pages.php conversion
-* [Manage Metadata](metagen.md)
+* [Feature Your Content](metagen.md)
     * SEO Slugs
     * Generate a Teaser
     * Generate Keyword Lists

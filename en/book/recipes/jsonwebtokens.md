@@ -30,7 +30,7 @@ submitted from some other source. This provides protection from cross site reque
 When using Ajax requests, the *nonce* token is a bad fit. First, the token is sent to the browser one
 time, but the browser may initiate many Ajax transactions. While it is possible to check the token without
 expiring it, that only complicates the issues. The Ajax interaction is an inherently asynchronous set
-of multiple processes. There is no reliable way to refresh a token, as the scripts do not neccessarily
+of multiple processes. There is no reliable way to refresh a token, as the scripts do not necessarily
 follow any order in processing. (The first in, may be the last to complete for example.)
 
 The real issue is there is no way to verify that the token is actually associated with an expected Ajax
@@ -116,16 +116,23 @@ $claims = array_merge($assertClaims, array('data' => 'mydata'));
 
 $token = TokenFactory::build('test', $claims, 120);
 
-// script thanks to Andrew Church on http://stackoverflow.com/questions/7433556/
 $script = <<<EOT
 <script>
 function myFunction()
 {
     \$.ajax({
         url: 'ajax.php',
-        dataType: 'jsonp',
+        dataType: 'json',
         beforeSend: function (xhr, settings) {
-            xhr . setRequestHeader('Authorization', 'Bearer ' + '{$token}');
+            xhr.setRequestHeader('Authorization', 'Bearer ' + '{$token}');
+        },
+        success: function (data) {
+            // do something useful
+            console.log(data.saw);
+        },
+        error: function() {
+            // communicate issue to user
+            alert('error');
         }
     });
 }

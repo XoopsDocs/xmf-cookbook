@@ -59,7 +59,7 @@ Creates a XoopsFormSelectGroup form element to select groups with permission to 
 
 The caption for the element is specified in *$caption*.
 
-If the name *$name* is empty or ommitted, a default name created by `defaultFieldName()` will be used.
+If the name *$name* is empty or omitted, a default name created by `defaultFieldName()` will be used.
 
 Set *$include_anon* (default false) to true to include the anonymous group.
 The size in *$size* (default 5) sets number of vertical rows shown in the element.
