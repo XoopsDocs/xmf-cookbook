@@ -10,7 +10,7 @@ if you need this in a circumstance where your module is not the currently active
 Here is an example of how this is done now. We have a module named “bar” and we want to get
 the configuration “foo”:
 
-```
+```php
 $module_handler = xoops_gethandler('module');
 $module         = $module_handler->getByDirname('bar');
 $config_handler = xoops_gethandler('config');
@@ -21,7 +21,7 @@ echo "The value of 'foo' being used is: " . $value;
 
 Here is an XMF version that accomplishes the same thing:
 
-```
+```php
 $helper = \Xmf\Module\Helper::getHelper('bar');
 echo "The value of 'foo' being used is: " . $helper->getConfig('foo', 'baz');
 ```
@@ -30,7 +30,7 @@ echo "The value of 'foo' being used is: " . $helper->getConfig('foo', 'baz');
 
 Here, we extend the last example to get the module's version using our XMF module helper.
 
-```
+```php
 $version = $helper->getModule()->getVar('version');
 ```
 
