@@ -115,6 +115,11 @@ If not otherwise specified, the default value is ''.
 
 Returns a string.
 
+### Request::hasVar(*$name*, *$hash*)
+Check if the variable named *$name* exists in the hash named *$hash*.
+
+Returns *true* if the named variable exists, otherwise *false*.
+
 ### Request::setVar(*$name*, *$value*, *$hash*, *$overwrite*)
 Set the variable named *$name* in hash named *$hash*. If the named variable exists,
 it will only be overwritten if *$overwrite* is true (which is the default).
