@@ -5,7 +5,7 @@ One common use is to guide the user to occurrences of search terms in the displa
 For this example, we assume you have an array of terms to highlight in *$words*, and
 some text (HTML is fine) in *$body*.
 
-```
+```php
 $pre = '<span class=”highlight”>';
 $post = '</span>';
 \Xmf\Highlighter::apply($words, $body, $pre, $post);
