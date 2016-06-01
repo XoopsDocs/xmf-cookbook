@@ -12,7 +12,7 @@ the PHP built in class `ArrayObject` is in the global space.
 This name is pretty well known to PHP programmers, and is documented in the PHP manual, but let's
 imagine that we did not know about it, and wrote our new cool class like this:
 
-```
+```php
 <?php
 
 class ArrayObject {
@@ -40,7 +40,7 @@ PHP has a feature call namespaces. A namespace is a name, or set of nested names
 of symbols and names that are not global. Let's make a small change to our example, to illustrate
 this.
 
-```
+```php
 <?php
 namespace MyNamespace;
 
@@ -55,7 +55,7 @@ PHP is happy now.
 
 If all of our code is in the same namespace, we can use our class like this:
 
-```
+```php
 <?php
 namespace MyNamespace;
 
@@ -69,13 +69,13 @@ same problems with sharing a namespace.
 
 That new class we created is actually `\MyNamespace\ArrayObject`. To instantiate it we can do this, anywhere:
 
-```
+```php
     $object = new \MyNamespace\ArrayObject();
 ```
 
 or, if we prefer, we can tell PHP to use a namespace when it sees our class name.
 
-```
+```php
 <?php
 use MyNamespace\ArrayObject;
 
@@ -92,7 +92,7 @@ It can even change a name if needed. Be sure and
 This brings up an issue. How could we use the real PHP ArrayObject if needed? The answer is to add a
 leading backslash. That leading backslash tells PHP start looking from the highest global namespace.
 
-```
+```php
 <?php
 use MyNamespace\ArrayObject;
 
