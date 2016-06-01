@@ -11,7 +11,7 @@ that will rename an old table named 'eigenaar' to a standardized name of 'pedigr
 
 First, the old way:
 
-```
+```php
 function tableExists($tablename)
 {
     global $xoopsDB;
@@ -41,7 +41,7 @@ function xoops_module_update_pedigree()
 
 Here is the same operation using the \Xmf\Database\Tables class:
 
-```
+```php
 function xoops_module_update_pedigree()
 {
     $migrate = new \Xmf\Database\Tables();
@@ -59,7 +59,7 @@ function xoops_module_update_pedigree()
 Let's extend the previous example and suppose we also want to add a column, named
 'registrar_code', as a varchar(24) at the same time. Here is the new function:
 
-```
+```php
 function xoops_module_update_pedigree()
 {
     $migrate = new \Xmf\Database\Tables();
