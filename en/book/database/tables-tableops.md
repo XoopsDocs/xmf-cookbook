@@ -9,10 +9,10 @@ and getLastErrNo().
 
 ### setTableOptions(*$table*, *$options*)
 
-Queue instruction needed to alter the table named *$table* with attributes specified in the array *$options*
+Queue instruction needed to alter the table named *$table* with attributes specified in *$options*
 to the work queue.
 
-An example of *$options* is `array("ENGINE=MyISAM", "DEFAULT CHARSET=utf8")`.
+An example of *$options* is `"ENGINE=MyISAM DEFAULT CHARSET=utf8")`.
 
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
