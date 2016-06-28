@@ -7,18 +7,26 @@ or a string to use as the where clause.
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
 
-### insert(*$table*, *$columns*)
+### insert(*$table*, *$columns*, *$quoteValue*)
 Adds an INSERT SQL statement for the table named *$table* to the work queue. The data to insert is
 supplied in *$columns* as an array. Each element in the array is in the form `array('column' => 'value')`.
+
+By default, the value portion of the supplied *$columns* entries is quoted in the resulting SQL. To supply 
+your own quoting, supply *false* for *$quoteValue*. This is especially useful if you are using expressions 
+in the values.
 
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
 
-### update(*$table*, *$columns*, *$criteria*)
+### update(*$table*, *$columns*, *$criteria*, *$quoteValue*)
 Adds an UPDATE SQL statement for the table named *$table* to the work queue. The data to updated is
 supplied in *$columns* as an array. Each element in the array is in the form `array('column' => 'value')`.
 Criteria specified in *$criteria* to limit which rows are updated can be a CriteriaElement object,
 or a string to use as the where clause.
+
+By default, the value portion of the supplied *$columns* entries is quoted in the resulting SQL. To supply 
+your own quoting, supply *false* for *$quoteValue*. This is especially useful if you are using expressions 
+in the values.
 
 Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
 and getLastErrNo().
