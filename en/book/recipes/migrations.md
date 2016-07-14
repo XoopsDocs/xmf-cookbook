@@ -1,4 +1,4 @@
-## Migrating a Database
+## Migrating a Module's Database
 
 Over time, a module can accumulate numerous database changes. For simple situations, where
 there are a small set of known changes, the [Tables](./dbtables.md) class may be an appropriate 
@@ -13,7 +13,7 @@ as well as changing column attributes, such as type, length or default value. In
 synchronized.
 
 For more complex requirements, such as renaming tables or columns, and data conversion, it is 
-possible to manually specify DDL or SQL statments that will be run prior to the automatic 
+possible to manually specify DDL or SQL statements that will be run prior to the automatic 
 synchronization.
 
 ### Basics
