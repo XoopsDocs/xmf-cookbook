@@ -7,7 +7,7 @@ Presently, this task is usually handled with a file of raw SQL inserts fed to a
 `queryFromFile()` function. This method has some drawbacks. For an example, consider
 this line from a language specific file used in the installation of XOOPS:
 
-```
+```php
 INSERT INTO ranks VALUES (1, 'Just popping in', 0, 20, 0, 'ranks/rank3e632f95e81ca.gif');
 ```
 
@@ -56,14 +56,14 @@ You can also load data directly from an array, using TableLoad::loadTableFromArr
 
 Take the file describe in the previous step, and load it to an array using [Xmf\Yaml](../yaml/README.md).
 
-```
+```php
     $data = Yaml::readWrapped(ranks-data.yml');
 ```
 
 Now, we can work with the data, changing it before inserting it. We will assume your application
 provides a translate() function to return a localized string for the title.
 
-```
+```php
     foreach ($data as $index => $row) {
         $data[$index]['rank_title'] = translate($data[$index]['rank_title']);
     }

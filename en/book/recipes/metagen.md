@@ -10,7 +10,7 @@ make that process a little smoother.
 Using a human meaningful phrase instead of raw id variables in a URL is a common SEO strategy.
 Most content has a title, and `Xmf\Metagen` has an easy way to turn that title into a slug:
 
-```
+```php
 $title = 'xmf - the XOOPS Module Framework';
 echo Metagen::generateSeoTitle($title);
 ```
@@ -25,7 +25,7 @@ Given a block of text, `Metagen::generateKeywords()` can extract the most common
 Here we feed it the lyrics of "[Mary Had a Little Lamb](http://kids.niehs.nih.gov/games/songs/childrens/maryhad.htm),"
 asking for a list of four words.
 
-```
+```php
 $data = file_get_contents('mary-had-a-little-lamb.txt');
 $keywords = \Xmf\Metagen::generateKeywords($data, 4);
 echo implode(', ', $keywords);
@@ -58,7 +58,7 @@ user to the most relevant results.
 Here, we request a summary of about 40 characters, centered around our chosen keyword(s), in this case *'school'*.
 The text breaks on natural boundaries.
 
-```
+```php
 $data = file_get_contents('mary-had-a-little-lamb.txt');
 $summary = \Xmf\Metagen::getSearchSummary($data, 'school', 40);
 echo $summary;

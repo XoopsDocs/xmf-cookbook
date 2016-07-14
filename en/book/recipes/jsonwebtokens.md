@@ -74,7 +74,7 @@ interaction through the javascript console or developer tools demonstrates the f
 
 ### Ajax protection with JWT
 
-```
+```php
 <?php
 
 use Xmf\Jwt\TokenFactory;
