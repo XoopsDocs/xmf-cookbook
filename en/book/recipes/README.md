@@ -18,8 +18,10 @@
     * Rename a Database Table
     * Add a Column to a Table
 * [Migrating a Module's Database](migrations.md)
-    * Rename a Database Table
-    * Add a Column to a Table
+    * Generate a Schema Definition
+    * Basic Synchronization
+    * Rename a Set of Tables
+    * Convert a Changed Column
 * [Loading Initial Data](loaddata.md)
     * Simple Table Loading
     * Apply a Transform
