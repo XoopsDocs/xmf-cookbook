@@ -20,9 +20,14 @@
         * Save and Retrieve Context
     * [Use JSON Web Tokens](book/recipes/jsonwebtokens.md)
         * Ajax Protection with JWT
-    * [Migrating a Database](book/recipes/migrations.md)
+    * [Altering Database Tables](book/recipes/dbtables.md)
         * Rename a Database Table
         * Add a Column to a Table
+    * [Migrating a Module's Database](book/recipes/migrations.md)
+        * Generate a Schema Definition
+        * Basic Synchronization
+        * Rename a Set of Tables
+        * Convert a Changed Column
     * [Loading Initial Data](book/recipes/loaddata.md)
         * Simple Table Loading
         * Apply a Transform
