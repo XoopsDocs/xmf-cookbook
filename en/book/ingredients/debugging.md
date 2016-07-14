@@ -5,7 +5,7 @@ it isn't practical, or in some cases even possible, to use XDebug in a fancy IDE
 weight approach of echoing variables from deep inside the code comes to the rescue. But, echo and var_export
 have are not the most friendly or productive tools. This is where `Xmf\Debug` is your friend.
 
-```
+```php
     \Xmf\Debug::dump($GLOBALS['xoopsUser']);
 ```
 
@@ -20,19 +20,19 @@ Clicking on the dump line opens it:
 
 You can dump multiple variable in one line:
 
-```
+```php
     \Xmf\Debug::dump($counter, $output, $handler);
 ```
 
 Need to take a look at your inputs?
 
-```
+```php
     \Xmf\Debug::dump($_POST);
 ```
 
 How did we get here?
 
-```
+```php
     \Xmf\Debug::backtrace();
 ```
 

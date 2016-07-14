@@ -43,7 +43,7 @@ module's directory name (dirname.) Then, invoke the `saveCurrentSchema()` method
 This will save a schema file to the module's **sql** directory. The file is named based on the dirname and 
 the module's version.
 
-```PHP
+```php
     $migrate = new Xmf\Database\Migrate('mymodule');
     $result = $migrate->saveCurrentSchema();
     if (false === $result) {
@@ -51,14 +51,14 @@ the module's version.
     }
 ```
 
-### Basic Synchronization
+### Basic Synchronizat`ion
 
 To synchronize any existing table to a stored scheme definition takes
 only one call to `synchronizeSchema()`.
 
 This can add and drop tables, add and drop columns, and add and drop indexes.
 
-```PHP
+```php
 function xoops_module_update_mymodule(XoopsModule $module)
 {
     $migrate = new Xmf\Database\Migrate('mymodule');
@@ -90,7 +90,7 @@ Migrate automatically gives us an instance of [Xmf\Database\Tables](../database/
 and we can add any extra commands we need.
 
 
-```
+```php
 class NewbbMigrate extends Xmf\Database\Migrate
 {
     // a array of 'old_name' => 'new_name' pairs
@@ -152,7 +152,7 @@ We kick this off with this function in our `$modversion['onUpdate']` file.
 We use the pre_update function, so that we change the tables to the correct names
 before any other update processing.
 
-```
+```php
 function xoops_module_pre_update_newbb(XoopsModule $module)
 {
     XoopsLoad::load('migrate', 'newbb');
@@ -171,7 +171,7 @@ The old column was integer, with the addresses in network form, but we
 are changing to a varchar column, with the address in a human readable 
 form.
 
-```
+```php
 class NewbbMigrate extends Xmf\Database\Migrate
 {
     // a array of 'old_name' => 'new_name' pairs

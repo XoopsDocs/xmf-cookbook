@@ -23,25 +23,25 @@ an array, even an object.
 
 The fist step is always to get a session helper.
 
-```
+```php
 $sessionHelper = new \Xmf\Module\Helper\Session();
 ```
 
 Save the data like this:
 
-```
+```php
 $sessionHelper->set('context', $value);
 ```
 
 Retrieving your value is just as easy:
 
-```
+```php
 $value = $sessionHelper->get('context');
 ```
 
 If you are finished with the value you saved and no longer need it, you can delete it:
 
-```
+```php
 $sessionHelper->del('context');
 ```
 

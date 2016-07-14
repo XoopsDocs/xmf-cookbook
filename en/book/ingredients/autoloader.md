@@ -5,7 +5,7 @@ whenever you refer to them.
 
 For example, consider the familiar XoopsRequest class.
 
-```
+```php
 XoopsLoad('xoopsrequest');
 $cleanInput = XoopsRequest::getString('input', '');
 ```
@@ -13,14 +13,14 @@ $cleanInput = XoopsRequest::getString('input', '');
 XMF has a version of Request that is regularly synchronized with newer versions, and will be the
 definitive version starting with XOOPS 2.5.8. This is how the same code can look with XMF:
 
-```
+```php
 $input = Xmf\Request::getString('input', '');
 ```
 
 You can combine this with the tips under [namespaces](namespaces.md), and expand to a few more input fields
 for a look at a more typical use case:
 
-```
+```php
 use Xmf\Request;
 
 // ...
