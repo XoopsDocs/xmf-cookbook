@@ -51,7 +51,7 @@ the module's version.
     }
 ```
 
-### Basic Synchronizat`ion
+### Basic Synchronization
 
 To synchronize any existing table to a stored scheme definition takes
 only one call to `synchronizeSchema()`.
