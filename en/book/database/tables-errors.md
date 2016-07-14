@@ -6,10 +6,10 @@ Return message from last error encountered
 ### getLastErrNo()
 Return code from last error encountered
 
-## Debugging methods
+## Utility methods
 
-These methods expose internal data and may be useful in debugging. However, the internal mechanisms they expose
-**will** change over time. Do not depend on these methods in your finished module.
+These methods expose internal data and may be useful in debugging and utility creation. 
+Be aware, however, the internal mechanisms they expose **will** change over time. 
 
 ### dumpTables()
 

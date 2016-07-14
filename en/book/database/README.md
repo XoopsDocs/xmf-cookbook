@@ -4,6 +4,7 @@ The `Xmf\Database` namespace contains classes to simplify database maintenance t
 installing and updating a module.
 
 ### Classes in the Xmf\Database namespace
+* [Migrate](migrate.md)
 * [TableLoad](tableload.md)
 * [Tables](tables.md)
     * [Getting Started](../database/tables-start.md)
