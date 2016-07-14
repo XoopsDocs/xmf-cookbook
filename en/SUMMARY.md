@@ -43,6 +43,7 @@
     * [Highlighting Content](book/recipes/highlight.md)
 * [Reference](book/reference/README.md)
     * [Database](book/database/README.md)
+        * [Migrate](book/database/migrate.md)
         * [TableLoad](book/database/tableload.md)
         * [Tables](book/database/tables.md)
             * [Getting Started](book/database/tables-start.md)

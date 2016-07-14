@@ -14,7 +14,10 @@
     * Save and Retrieve Context
 * [Use JSON Web Tokens](jsonwebtokens.md)
     * Ajax Protection with JWT
-* [Migrating a Database](migrations.md)
+* [Altering Database Tables](dbtables.md)
+    * Rename a Database Table
+    * Add a Column to a Table
+* [Migrating a Module's Database](migrations.md)
     * Rename a Database Table
     * Add a Column to a Table
 * [Loading Initial Data](loaddata.md)
