@@ -10,7 +10,7 @@ Here are examples of the standard index and about pages.
 
 An example index page in the current 2.5 format:
 
-```
+```php
 $indexAdmin = new ModuleAdmin();
 
 echo $indexAdmin->addNavigation('index.php');
@@ -19,7 +19,7 @@ echo $indexAdmin->renderIndex();
 
 Forward compatible version using XMF:
 
-```
+```php
 $indexAdmin = \Xmf\Module\Admin::getInstance();
 
 $indexAdmin->displayNavigation('index.php');
@@ -30,7 +30,7 @@ $indexAdmin->displayIndex();
 
 An example about page in the current 2.5 format:
 
-```
+```php
 $aboutAdmin = new ModuleAdmin();
 
 echo $aboutAdmin->addNavigation('about.php');
@@ -39,7 +39,7 @@ echo $aboutAdmin->renderAbout('6XYZRW5DR3VTJ', false);
 
 Migration ready using XMF:
 
-```
+```php
 $aboutAdmin = \Xmf\Module\Admin::getInstance();
 
 $aboutAdmin->displayNavigation('about.php');

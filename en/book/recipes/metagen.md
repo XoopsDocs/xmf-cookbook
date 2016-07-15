@@ -40,7 +40,7 @@ The output:
 Grabbing the lead sentences from a block of text for use as a description is easy. Call
 `Xmf\Metagen::generateDescription()` with your text and the number of words you want:
 
-```
+```php
 $data = file_get_contents('mary-had-a-little-lamb.txt');
 $description = \Xmf\Metagen::generateDescription($data, 40);
 echo $description;
@@ -62,7 +62,6 @@ The text breaks on natural boundaries.
 $data = file_get_contents('mary-had-a-little-lamb.txt');
 $summary = \Xmf\Metagen::getSearchSummary($data, 'school', 40);
 echo $summary;
-
 ```
 
 The output:

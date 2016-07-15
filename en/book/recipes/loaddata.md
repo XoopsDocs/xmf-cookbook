@@ -7,7 +7,7 @@ Presently, this task is usually handled with a file of raw SQL inserts fed to a
 `queryFromFile()` function. This method has some drawbacks. For an example, consider
 this line from a language specific file used in the installation of XOOPS:
 
-```php
+```SQL
 INSERT INTO ranks VALUES (1, 'Just popping in', 0, 20, 0, 'ranks/rank3e632f95e81ca.gif');
 ```
 
