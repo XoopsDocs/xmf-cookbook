@@ -5,7 +5,7 @@ For item permissions to work, we have to be able to assign permissions to an ite
 
 The first step is to get a Permission Helper instance.
 
-```
+```php
 $permHelper = new \Xmf\Module\Helper\Permission();
 ```
 
@@ -18,7 +18,7 @@ We will also assume that our module directory is *'forum'*.
 
 Here is the code that adds our group selection for permissions to our form:
 
-```
+```php
 // … build a form …
 
 $form->addElement($permHelper->getGroupSelectFormForItem('viewtopic', $id,
@@ -36,7 +36,7 @@ several other options if needed. For more on these options, see the reference se
 
 Here is code that saves our group permissions from the form when it is submitted.
 
-```
+```php
 // … process form input …
 
 $name=$permHelper->defaultFieldName('viewtopic', $id);
@@ -57,7 +57,7 @@ both have view and post permissions. The name implies which entity the id applie
 
 Here is an example of cleaning up when deleting a topic. The topic id is in $id.
 
-```
+```php
 $permHelper->deletePermissionForItem('viewtopic', $id);
 ```
 
@@ -66,7 +66,7 @@ Assuming we also have a permissions name 'posttopic' that applies to the topic i
 Of course, we could just issue a separate `deletePermissionForItem()` for each one.
 We can also specify it like this:
 
-```
+```php
 $permissionNames = array('posttopic', 'viewtopic');
 $permHelper->deletePermissionForItem($permissionNames, $id);
 ```

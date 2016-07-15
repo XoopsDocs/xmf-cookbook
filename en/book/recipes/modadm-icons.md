@@ -8,7 +8,7 @@ As XOOPS matures, the icons won't be in the same place. There are static methods
 
 You might have had some code that looks like this:
 
-```
+```php
 $dirname         = basename(dirname(dirname(__FILE__)));
 $module_handler  = xoops_gethandler('module');
 $module          = $module_handler->getByDirname($dirname);
@@ -18,7 +18,7 @@ $img_src         = $pathIcon16 . '/delete.png';
 
 Here is an XMF version that accomplishes the same thing, in a migration ready way:
 
-```
+```php
 $img_src = \Xmf\Module\Admin::iconUrl('delete.png', 16);
 ```
 
@@ -31,7 +31,7 @@ Administration area menus are one place where icon location changes cause proble
 
 Here is an example of an old menu.php:
 
-```
+```php
 $dirname = basename(dirname(dirname(__FILE__)));
 $module_handler = xoops_gethandler('module');
 $module = $module_handler->getByDirname($dirname);
@@ -54,7 +54,7 @@ $adminmenu[] = array(
 
 Here is a sample of how we can rewrite menu.php to work now and later with XMF.
 
-```
+```php
 // get path to icons
 $pathIcon32='';
 if (class_exists('Xmf\Module\Admin', true)) {
