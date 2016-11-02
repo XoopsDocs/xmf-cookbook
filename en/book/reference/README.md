@@ -44,4 +44,5 @@ This is a detailed overview of all of the XMF classes as of release 1.0.
         * [Session](../module/session.md)
 * [Random](../random/README.md)
 * [Request](../request/README.md)
+* [StopWords](../stopwords/README.md)
 * [Yaml](../yaml/README.md)
