@@ -88,5 +88,6 @@
             * [Session](book/module/session.md)
     * [Random](book/random/README.md)
     * [Request](book/request/README.md)
+    * [StopWords](book/stopwords/README.md)
     * [Yaml](book/yaml/README.md)
 * [Credits](book/credits.md)

@@ -32,8 +32,10 @@ at the beginning of the string if no *$needles* are specified or found.
 
 ## Metagen::checkStopWords(*$key*)
 
+** This method is deprecated. Use of [StopWords::check()](../stopwords/README.md) is prefered.**
+
 Look up the word *$key* in the list of [stop words](https://en.wikipedia.org/wiki/Stop_words) and
 classify it as a significant word or a stop word.
 
-Returns *true* if the word is significant, or *false* if it is a stop word,
+Returns *true* if the word is significant, or *false* if it is a stop word.
 
