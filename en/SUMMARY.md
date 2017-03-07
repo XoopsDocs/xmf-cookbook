@@ -47,6 +47,8 @@
         * Generate a Search Summary
     * [Highlighting Content](book/recipes/highlight.md)
 * [Reference](book/reference/README.md)
+    * [Assert](book/assert/README.md)
+        * [Assertions](book/assert/assert.md)
     * [Database](book/database/README.md)
         * [Migrate](book/database/migrate.md)
         * [TableLoad](book/database/tableload.md)
