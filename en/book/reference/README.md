@@ -1,9 +1,11 @@
 ## Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.0.
+This is a detailed overview of all of the XMF classes as of release 1.2.4.
 
 ### Contents
 
+* [Assert](../assert/README.md)
+    * [Assertions](../assert/assert.md)
 * [Database](../database/README.md)
     * [TableLoad](../database/tableload.md)
     * [Tables](../database/tables.md)
