@@ -1,6 +1,6 @@
 ## Assertions
 
-The [`Xmf\Assert`] class provides the following assertions:
+The [`Xmf\Assert`](README.md) class provides the following assertions:
 
 ### Type Assertions
 
