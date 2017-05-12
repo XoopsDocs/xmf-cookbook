@@ -32,7 +32,7 @@ use InvalidArgumentException;
         Assert::greaterThan($uid, 0, "Invalid Id"); // must be greater than zero
     } catch(InvalidArgumentException $e) {
         // handle the exception
-        redirect_header('index.php', 2, $e->getMessage();
+        redirect_header('index.php', 2, $e->getMessage());
     }
 
 // ...
