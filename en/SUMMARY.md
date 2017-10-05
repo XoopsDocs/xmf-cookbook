@@ -91,5 +91,6 @@
     * [Random](book/random/README.md)
     * [Request](book/request/README.md)
     * [StopWords](book/stopwords/README.md)
+    * [Uuid](book/uuid/README.md)
     * [Yaml](book/yaml/README.md)
 * [Credits](book/credits.md)

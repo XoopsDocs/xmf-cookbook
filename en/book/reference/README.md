@@ -47,4 +47,5 @@ This is a detailed overview of all of the XMF classes as of release 1.2.8.
 * [Random](../random/README.md)
 * [Request](../request/README.md)
 * [StopWords](../stopwords/README.md)
+* [Uuid](../uuid/README.md)
 * [Yaml](../yaml/README.md)
