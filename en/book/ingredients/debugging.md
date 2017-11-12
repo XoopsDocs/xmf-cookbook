@@ -6,7 +6,7 @@ weight approach of echoing variables from deep inside the code comes to the resc
 have are not the most friendly or productive tools. This is where `Xmf\Debug` is your friend.
 
 ```php
-    \Xmf\Debug::dump($GLOBALS['xoopsUser']);
+    \Xmf\Debug::dump($GLOBALS['xoopsModule']);
 ```
 
 Output this when executed:
