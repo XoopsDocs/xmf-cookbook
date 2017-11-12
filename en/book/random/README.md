@@ -1,9 +1,9 @@
 ## Random
 
-The `Xmf\Random` class produces random strings for use as tokens or keys. While these methods
-have controlling parameters, the default values were carefully researched and selected. If you
-need the control, please refer to the source code, and the documentation of the supporting
-[RandomLib library](https://github.com/ircmaxell/RandomLib).
+The `Xmf\Random` class produces random strings for use as tokens or keys.
+
+All methods may throw an `\Exception` if a suitable random number cannot be
+generated. See the [random_bytes()](http://php.net/manual/en/function.random-bytes.php) documentation for more information.
 
 ### generateOneTimeToken()
 
