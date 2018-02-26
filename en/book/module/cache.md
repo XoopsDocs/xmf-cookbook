@@ -13,7 +13,7 @@ If the string *$dirname* is empty, the current module in XOOPS will be used.
 
 ### write(*$key*, *$value*, *$ttl*)
 
-Write the value *$value* for a key named *$key* to the cache, with the specified number of seconds ir *$ttl*
+Write the value *$value* for a key named *$key* to the cache, using the specified number of seconds in *$ttl*
 as the time to live.
 
 ### read(*$key*, *$default*)
