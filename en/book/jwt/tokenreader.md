@@ -6,7 +6,7 @@ The `Xmf\Jwt\TokenReader` class provides convenience methods to simplify reading
 Validate and decode a JSON Web Token string
 
 The *$key* is the key that was used to to sign the token. It may be specified as a
-[KeyAbstract](../key/keyabstract.md)  object, or a key name string that will be used
+[KeyAbstract](../key/keyabstract.md) object, or a key name string that will be used
 to build a key object using the [KeyFactory](keyfactory.md) using a default [FileStorage](../key/filestorage.md)
 instance for storage.
 
