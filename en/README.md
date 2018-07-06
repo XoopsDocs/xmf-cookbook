@@ -3,7 +3,7 @@
 
 # The XMF Cookbook
 
-Copyright © 2013-2018 XOOPS Project ([www.xoops.org](http://xoops.org))    
+Copyright © 2013-2018 XOOPS Project ([www.xoops.org](https://xoops.org))    
 
 
 ##License:
