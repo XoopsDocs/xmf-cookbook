@@ -1,14 +1,15 @@
-### _XOOPS Documentation Series_
-![logoXoops.jpg](assets/logoXoops.jpg)
+# XOOPS Documentation Series
 
-# The XMF Cookbook
+![logoXoops.jpg](../.gitbook/assets/logoxoops.jpg)
 
+## The XMF Cookbook
 
-Copyright © 2013-2018 XOOPS Project ([www.xoops.org](https://xoops.org))    
+Copyright © 2013-2018 XOOPS Project \([www.xoops.org](https://xoops.org)\)
 
+### License:
 
-## License:
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
+Unless otherwise specified, this content is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Unless otherwise specified, this content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+All derivative works are to be attributed to XOOPS Project \([www.xoops.org](https://xoops.org)\)
 
-All derivative works are to be attributed to XOOPS Project ([www.xoops.org](https://xoops.org))

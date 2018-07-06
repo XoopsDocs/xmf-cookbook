@@ -1,29 +1,28 @@
-## FileStorage
+# filestorage
 
-The `Xmf\Key\FileStorage` class implements [Xmf\Key\StorageInterface](storageinterface.md) using files
-in *XOOPS_VAR_PATH/data/* directory to persist keys.
+The `Xmf\Key\FileStorage` class implements [Xmf\Key\StorageInterface](storageinterface.md) using files in _XOOPS\_VAR\_PATH/data/_ directory to persist keys.
 
-### save(*$name*, *$data*)
+## save\(_$name_, _$data_\)
 
-Save key data *$data* under the name *$name*.
+Save key data _$data_ under the name _$name_.
 
 Returns true if successful, otherwise false.
 
-### fetch(*$name*)
+## fetch\(_$name_\)
 
-Fetch key data stored under the name *$name*.
+Fetch key data stored under the name _$name_.
 
 Returns the stored key data if successful, otherwise false.
 
-### exists(*$name*)
+## exists\(_$name_\)
 
-Check for the existence of a key under the name *$name*.
+Check for the existence of a key under the name _$name_.
 
-Returns true if a key named *$name* exists, otherwise false.
+Returns true if a key named _$name_ exists, otherwise false.
 
-### delete(*$name*)
+## delete\(_$name_\)
 
-Delete a any key stored under the name  *$name*.
+Delete a any key stored under the name _$name_.
 
 Returns true if successful, otherwise false.
 

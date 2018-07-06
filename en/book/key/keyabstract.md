@@ -1,4 +1,4 @@
-## KeyAbstract
+# keyabstract
 
 The `Xmf\Key\KeyAbstract` is an abstract class that defines a Key.
 
@@ -8,27 +8,25 @@ The concrete implementations of KeyAbstract are responsible for
 * serializing and deserializing key data for storage
 * interacting with a StorageInterface implementation for key persistence as needed
 
-### __construct(*$storage*, *$name*)
+## \_\_construct\(_$storage_, _$name_\)
 
-The StorageInterface instance, *$storage*, handles persistence for this key.
-The *$name* parameter is the symbolic name of the key to use.
-The *$name* uniquely identifies the key in the key store. The key name should relate to a specific
-application action, or a closely related set of actions.
+The StorageInterface instance, _$storage_, handles persistence for this key. The _$name_ parameter is the symbolic name of the key to use. The _$name_ uniquely identifies the key in the key store. The key name should relate to a specific application action, or a closely related set of actions.
 
-### getSigning()
+## getSigning\(\)
 
 Returns a key string to be used for signing.
 
-### getVerifying()
+## getVerifying\(\)
 
 Returns a key string to be used for verifying.
 
-### create()
+## create\(\)
 
 Create the key and store it for use.
 
 Returns true on success, otherwise false.
 
-### kill()
+## kill\(\)
 
 Delete the key from storage.
+

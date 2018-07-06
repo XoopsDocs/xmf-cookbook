@@ -1,4 +1,4 @@
-## Basic Ingredients
+# README
 
 There are some things that you need to know for any XMF recipe.
 

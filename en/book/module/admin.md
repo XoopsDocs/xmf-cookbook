@@ -1,112 +1,115 @@
+# admin
+
 ## Admin
 
-The `Xmf\Module\Admin` class is a transition wrapper for Module Administration methods. To the extent
-possible, the next generation \Xoops\Module\Admin methods are supported. Using `Xmf\Module\Admin` instead
-of the native Frameworks ModuleAdmin in 2.5.x makes the admin area code forward compatible.
+The `Xmf\Module\Admin` class is a transition wrapper for Module Administration methods. To the extent possible, the next generation \Xoops\Module\Admin methods are supported. Using `Xmf\Module\Admin` instead of the native Frameworks ModuleAdmin in 2.5.x makes the admin area code forward compatible.
 
-### Admin::getInstance()
+### Admin::getInstance\(\)
 
-Retrieve a module admin instance. The return instance may be an instance of `Xmf\Module\Admin`,
-or a native system class if it is already compatible with `Xmf\Module\Admin`.
+Retrieve a module admin instance. The return instance may be an instance of `Xmf\Module\Admin`, or a native system class if it is already compatible with `Xmf\Module\Admin`.
 
-### addConfigBoxLine(*$value*, *$type*)
+### addConfigBoxLine\(_$value_, _$type_\)
 
 Add a line to the config box.
 
-This chart shows the minimal set of acceptable types and value expectation.
-Additional types may be available, but may produces different results based on the underlying XOOPS version.
+This chart shows the minimal set of acceptable types and value expectation. Additional types may be available, but may produces different results based on the underlying XOOPS version.
 
-| *$type* | *$value* |
-|---------|----------|
-| default | value is message displayed directly (also used for any unknown types)|
-| folder  | value is directory name, will display accept message if it exists, or an error if not |
-| chmod   | value is array("directory name", permission) accept if exists with permission, else error |
-| module  | value is string module name, or array(module, type). If module is installed an accept message displays, otherwise a warning (if *$value*[1]=='warning') or an error displays. |
+| _$type_ | _$value_ |
+| --- | --- |
+| default | value is message displayed directly \(also used for any unknown types\) |
+| folder | value is directory name, will display accept message if it exists, or an error if not |
+| chmod | value is array\("directory name", permission\) accept if exists with permission, else error |
+| module | value is string module name, or array\(module, type\). If module is installed an accept message displays, otherwise a warning \(if _$value_\[1\]=='warning'\) or an error displays. |
 
-Returns *true* on success, otherwise *false*.
+Returns _true_ on success, otherwise _false_.
 
-### addConfigError(*$value*)
+### addConfigError\(_$value_\)
 
-Add the message *$value* to the config box as an error
+Add the message _$value_ to the config box as an error
 
-Returns *true* on success, otherwise *false*.
+Returns _true_ on success, otherwise _false_.
 
-### addConfigAccept(*$value*)
+### addConfigAccept\(_$value_\)
 
-Add the message *$value* to the config box as an accept (OK) message.
+Add the message _$value_ to the config box as an accept \(OK\) message.
 
-Returns *true* on success, otherwise *false*.
+Returns _true_ on success, otherwise _false_.
 
-### addConfigWarning(*$value*)
+### addConfigWarning\(_$value_\)
 
-Add the message *$value* to the config box as a warning.
+Add the message _$value_ to the config box as a warning.
 
-Returns *true* on success, otherwise *false*.
+Returns _true_ on success, otherwise _false_.
 
-### addConfigModuleVersion(*$moddir*, *$minversion*)
-Check for installed module and version and add a config box line, an accept message if module *$moddir* is
-installed and is version *$minversion* or higher, otherwise an error message.
+### addConfigModuleVersion\(_$moddir_, _$minversion_\)
 
-### addInfoBox(*$title*)
-Add Info box with the specified *$title*.
+Check for installed module and version and add a config box line, an accept message if module _$moddir_ is installed and is version _$minversion_ or higher, otherwise an error message.
 
-Returns *true* on success, otherwise *false*.
+### addInfoBox\(_$title_\)
 
-### addInfoBoxLine(*$text*, *$type*, *$color*)
+Add Info box with the specified _$title_.
 
-Add a line with text *$text* to the info box, with *$type* and *$color*
+Returns _true_ on success, otherwise _false_.
 
-Returns *true* on success, otherwise *false*.
+### addInfoBoxLine\(_$text_, _$type_, _$color_\)
 
-### renderInfoBox()
+Add a line with text _$text_ to the info box, with _$type_ and _$color_
+
+Returns _true_ on success, otherwise _false_.
+
+### renderInfoBox\(\)
 
 Return HTML string of rendered InfoBox.
 
-### displayInfoBox( )
+### displayInfoBox\( \)
 
 Display the rendered InfoBox.
 
-### addItemButton(*$title*, *$link*, *$icon*, *$extra*)
+### addItemButton\(_$title_, _$link_, _$icon_, _$extra_\)
 
-Add an Item button for displayButtonBox()
+Add an Item button for displayButtonBox\(\)
 
-Returns *true* on success, otherwise *false*.
+Returns _true_ on success, otherwise _false_.
 
-### renderButton(*$position*, *$delimiter*)
+### renderButton\(_$position_, _$delimiter_\)
 
 Return HTML string with all item buttons rendered.
 
-### displayButton(*$position*, *$delimiter*)
+### displayButton\(_$position_, _$delimiter_\)
 
 Display all item buttons
 
-### renderIndex()
+### renderIndex\(\)
 
 Return HTML string of rendered index page for admin
 
-### displayIndex()
+### displayIndex\(\)
 
 Display the rendered index page for admin
 
-### displayNavigation(*$menu*)
-Display the navigation menu for the page *$menu*
+### displayNavigation\(_$menu_\)
 
-### renderAbout(*$logo_xoops*)
+Display the navigation menu for the page _$menu_
+
+### renderAbout\(_$logo\_xoops_\)
 
 Return HTML string of rendered about page
 
-### displayAbout(*$logo_xoops*)
-Display the rendered about  page
+### displayAbout\(_$logo\_xoops_\)
+
+Display the rendered about page
 
 ## Static methods only available in Xmf\Module\Admin
 
-### Admin::iconUrl(*$name*, *$size*)
-Return an appropriate URL for system provided icons. The icon name is specified in *$name*. If it is blank,
-only the path will be returned. The size specified in *$size* should be 16 or 32. The default is 32.
+### Admin::iconUrl\(_$name_, _$size_\)
 
-### Admin::menuIconPath(*$image*)
-Return an appropriate imagePath for the image named *$image* for use in menu.php.
+Return an appropriate URL for system provided icons. The icon name is specified in _$name_. If it is blank, only the path will be returned. The size specified in _$size_ should be 16 or 32. The default is 32.
 
-### Admin::setPaypal(*$paypal*)
-set paypal for 2.5 renderAbout()/displayAbout().
+### Admin::menuIconPath\(_$image_\)
+
+Return an appropriate imagePath for the image named _$image_ for use in menu.php.
+
+### Admin::setPaypal\(_$paypal_\)
+
+set paypal for 2.5 renderAbout\(\)/displayAbout\(\).
 

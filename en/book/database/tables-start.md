@@ -1,18 +1,18 @@
-## Getting Started
+# tables-start
 
-### $tables = new Tables()
+## $tables = new Tables\(\)
 
 There are no arguments used to instantiate this class.
 
-### addTable(*$table*)
-Load schema for *$table* from database, or starts new empty schema if table does not exist.
+## addTable\(_$table_\)
 
-Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
-and getLastErrNo().
+Load schema for _$table_ from database, or starts new empty schema if table does not exist.
 
-### useTable(*$table*)
+Returns _true_ on success, or _false_ on error. Additional information may be available using getLastError\(\) and getLastErrNo\(\).
 
-Like addTable() but only succeeds if the *$table* already exists.
+## useTable\(_$table_\)
 
-Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
-and getLastErrNo().
+Like addTable\(\) but only succeeds if the _$table_ already exists.
+
+Returns _true_ on success, or _false_ on error. Additional information may be available using getLastError\(\) and getLastErrNo\(\).
+

@@ -1,47 +1,26 @@
-## Migrating a Module's Database
+# migrations
 
-Over time, a module can accumulate numerous database changes. For simple situations, where
-there are a small set of known changes, the [Tables](./dbtables.md) class may be an appropriate 
-solution. For larger change sets, possibly spanning multiple generations or versions of a module, 
-determining which changes need to be applied quickly becomes the most serious concern.
-`Xmf\Database\Migrate` assists in solving this problem by comparing the existing tables against
-a prepared schema description and generating the needed data definition language (DDL) statements
-to convert the existing tables to the target schema definition.
+Over time, a module can accumulate numerous database changes. For simple situations, where there are a small set of known changes, the [Tables](dbtables.md) class may be an appropriate solution. For larger change sets, possibly spanning multiple generations or versions of a module, determining which changes need to be applied quickly becomes the most serious concern. `Xmf\Database\Migrate` assists in solving this problem by comparing the existing tables against a prepared schema description and generating the needed data definition language \(DDL\) statements to convert the existing tables to the target schema definition.
 
-The automated migration DDL fully handles situations such adding or dropping tables or columns,
-as well as changing column attributes, such as type, length or default value. Indexes are also 
-synchronized.
+The automated migration DDL fully handles situations such adding or dropping tables or columns, as well as changing column attributes, such as type, length or default value. Indexes are also synchronized.
 
-For more complex requirements, such as renaming tables or columns, and data conversion, it is 
-possible to manually specify DDL or SQL statements that will be run prior to the automatic 
-synchronization.
+For more complex requirements, such as renaming tables or columns, and data conversion, it is possible to manually specify DDL or SQL statements that will be run prior to the automatic synchronization.
 
-### Basics
+## Basics
 
-Tables must be declared in your module's xoops_version.php file. The `$modversion['tables']` 
-entry should be an array of table names. This is an existing standard for all XOOPS modules,
-an this note is simply to reinforce that *Migrate* depends on this information.
+Tables must be declared in your module's xoops\_version.php file. The `$modversion['tables']` entry should be an array of table names. This is an existing standard for all XOOPS modules, an this note is simply to reinforce that _Migrate_ depends on this information.
 
-Typically, a database is initially prepared through a database tool, such as phpMyAdmin, MySQL Workbench
-or other interactive modeling tool. Once the database is defined, we can generate Migrate's internal
-schema representation to use in migrating any existing tables. For existing modules, the schema can be 
-prepared from the tables it creates.
+Typically, a database is initially prepared through a database tool, such as phpMyAdmin, MySQL Workbench or other interactive modeling tool. Once the database is defined, we can generate Migrate's internal schema representation to use in migrating any existing tables. For existing modules, the schema can be prepared from the tables it creates.
 
-Directly editing a generated schema representation is NOT recommended. The schema generation and comparison 
-are closely related, and direct changes may result in tables that work correctly, but appear to need updated 
-on each comparison.
+Directly editing a generated schema representation is NOT recommended. The schema generation and comparison are closely related, and direct changes may result in tables that work correctly, but appear to need updated on each comparison.
 
-For simple situations, you can use [Xmf\Database\Migrate](../database/migrate.md) directly. 
-For more involved migrations, it is best to extend `Migrate` with your own module specific
-class to take full advantage of the available features.
+For simple situations, you can use [Xmf\Database\Migrate](../database/migrate.md) directly. For more involved migrations, it is best to extend `Migrate` with your own module specific class to take full advantage of the available features.
 
-### Generate a Schema Definition
+## Generate a Schema Definition
 
-To generate a schema definition from your existing tables, instantiate a `Migrate` object, passing it your 
-module's directory name (dirname.) Then, invoke the `saveCurrentSchema()` method.
+To generate a schema definition from your existing tables, instantiate a `Migrate` object, passing it your module's directory name \(dirname.\) Then, invoke the `saveCurrentSchema()` method.
 
-This will save a schema file to the module's **sql** directory. The file is named based on the dirname and 
-the module's version.
+This will save a schema file to the module's **sql** directory. The file is named based on the dirname and the module's version.
 
 ```php
     $migrate = new Xmf\Database\Migrate('mymodule');
@@ -51,10 +30,9 @@ the module's version.
     }
 ```
 
-### Basic Synchronization
+## Basic Synchronization
 
-To synchronize any existing table to a stored scheme definition takes
-only one call to `synchronizeSchema()`.
+To synchronize any existing table to a stored scheme definition takes only one call to `synchronizeSchema()`.
 
 This can add and drop tables, add and drop columns, and add and drop indexes.
 
@@ -67,28 +45,17 @@ function xoops_module_update_mymodule(XoopsModule $module)
 }
 ```
 
-### Rename a Set of Tables
+## Rename a Set of Tables
 
-Naming conventions have changed over time, so preparing an older set of tables 
-to use with a new software version often requires checking to see if renaming is 
-needed, and conditionally renaming the existing tables.
+Naming conventions have changed over time, so preparing an older set of tables to use with a new software version often requires checking to see if renaming is needed, and conditionally renaming the existing tables.
 
-In this scenario we will rename the tables in *newbb* to conform to module standards
-that the table name begin with the module name and an underscore.
+In this scenario we will rename the tables in _newbb_ to conform to module standards that the table name begin with the module name and an underscore.
 
-Migrate can easily handle dropping and adding columns, tables and indexes. Migrate can't
-automatically handle renaming a table or column. To `synchronizeSchema()` a renamed
-column looks just like a dropped column and a added column. To resolve this ambiguity,
-we need to explicitly rename entities in our custom class that extends Migrate.
+Migrate can easily handle dropping and adding columns, tables and indexes. Migrate can't automatically handle renaming a table or column. To `synchronizeSchema()` a renamed column looks just like a dropped column and a added column. To resolve this ambiguity, we need to explicitly rename entities in our custom class that extends Migrate.
 
-For this, we will extend `Migrate` and take advantage of the `preSyncActions()` hook. 
-By doing these changes *before* the synchronization, we can make all the needed changes
-in one pass. We created a schema file using the new names that is distributed with the module,
-so once the tables are renamed, we can synchronize any other changes.
+For this, we will extend `Migrate` and take advantage of the `preSyncActions()` hook. By doing these changes _before_ the synchronization, we can make all the needed changes in one pass. We created a schema file using the new names that is distributed with the module, so once the tables are renamed, we can synchronize any other changes.
 
-Migrate automatically gives us an instance of [Xmf\Database\Tables](../database/tables.md) 
-and we can add any extra commands we need.
-
+Migrate automatically gives us an instance of [Xmf\Database\Tables](../database/tables.md) and we can add any extra commands we need.
 
 ```php
 class NewbbMigrate extends Xmf\Database\Migrate
@@ -148,9 +115,7 @@ class NewbbMigrate extends Xmf\Database\Migrate
 }
 ```
 
-We kick this off with this function in our `$modversion['onUpdate']` file.
-We use the pre_update function, so that we change the tables to the correct names
-before any other update processing.
+We kick this off with this function in our `$modversion['onUpdate']` file. We use the pre\_update function, so that we change the tables to the correct names before any other update processing.
 
 ```php
 function xoops_module_pre_update_newbb(XoopsModule $module)
@@ -163,13 +128,9 @@ function xoops_module_pre_update_newbb(XoopsModule $module)
 }
 ```
 
-### Convert a Changed Column
+## Convert a Changed Column
 
-Let's extend the previous example and suppose we also want to convert
-an IP Address column to handle IPv6 addresses as part of the migration. 
-The old column was integer, with the addresses in network form, but we 
-are changing to a varchar column, with the address in a human readable 
-form.
+Let's extend the previous example and suppose we also want to convert an IP Address column to handle IPv6 addresses as part of the migration. The old column was integer, with the addresses in network form, but we are changing to a varchar column, with the address in a human readable form.
 
 ```php
 class NewbbMigrate extends Xmf\Database\Migrate
@@ -261,3 +222,4 @@ class NewbbMigrate extends Xmf\Database\Migrate
     }
 }
 ```
+

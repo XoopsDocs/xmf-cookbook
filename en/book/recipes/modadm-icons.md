@@ -1,10 +1,8 @@
-## Win Hide and Seek with Icons
+# modadm-icons
 
-As XOOPS matures, the icons won't be in the same place. There are static methods in
-[Xmf\Module\Admin](..\module\admin.md) to help you win the game of hide and seek once and for all.
+As XOOPS matures, the icons won't be in the same place. There are static methods in [Xmf\Module\Admin](../module/admin.md) to help you win the game of hide and seek once and for all.
 
-
-### Where are the icons?
+## Where are the icons?
 
 You might have had some code that looks like this:
 
@@ -22,10 +20,9 @@ Here is an XMF version that accomplishes the same thing, in a migration ready wa
 $img_src = \Xmf\Module\Admin::iconUrl('delete.png', 16);
 ```
 
-You can also specify 32 for the size to get the larger size. And you don't have to worry about where the
-system icon library is hiding this time, as you will get back a full URL.
+You can also specify 32 for the size to get the larger size. And you don't have to worry about where the system icon library is hiding this time, as you will get back a full URL.
 
-### menu.php
+## menu.php
 
 Administration area menus are one place where icon location changes cause problems.
 
@@ -40,15 +37,15 @@ $pathIcon32 = $module->getInfo('icons32');
 $adminmenu=array();
 // Index
 $adminmenu[] = array(
-	'title'	=> _MI_DEMO_ADMIN_INDEX ,
-	'link'	=> 'admin/index.php' ,
-	'icon'	=> '../../' . $pathIcon32 . '/home.png'
+    'title'    => _MI_DEMO_ADMIN_INDEX ,
+    'link'    => 'admin/index.php' ,
+    'icon'    => '../../' . $pathIcon32 . '/home.png'
 ) ;
 // About
 $adminmenu[] = array(
-	'title'	=> _MI_DEMO_ADMIN_ABOUT ,
-	'link'	=> 'admin/about.php' ,
-	'icon'	=> '../../' . $pathIcon32 . '/about.png'
+    'title'    => _MI_DEMO_ADMIN_ABOUT ,
+    'link'    => 'admin/about.php' ,
+    'icon'    => '../../' . $pathIcon32 . '/about.png'
 ) ;
 ```
 
@@ -64,14 +61,15 @@ if (class_exists('Xmf\Module\Admin', true)) {
 $adminmenu=array();
 // Index
 $adminmenu[] = array(
-	'title'	=> _MI_DEMO_ADMIN_INDEX ,
-	'link'	=> 'admin/index.php' ,
-	'icon'	=> $pathIcon32.'home.png'
+    'title'    => _MI_DEMO_ADMIN_INDEX ,
+    'link'    => 'admin/index.php' ,
+    'icon'    => $pathIcon32.'home.png'
 ) ;
 // About
 $adminmenu[] = array(
-	'title'	=> _MI_DEMO_ADMIN_ABOUT ,
-	'link'	=> 'admin/about.php' ,
-	'icon'	=> $pathIcon32.'about.png'
+    'title'    => _MI_DEMO_ADMIN_ABOUT ,
+    'link'    => 'admin/about.php' ,
+    'icon'    => $pathIcon32.'about.png'
 ) ;
 ```
+
