@@ -1,10 +1,8 @@
-# Introduction
+# XMF Cookbook
 
 ![logoXoops.jpg](.gitbook/assets/logoxoops.jpg)
 
 ## The XMF \(XOOPS Module Framework\) Cookbook
-
-### View it on: [![Gitbook](https://xoops.org/images/logoGitbookSmall.png)](https://xoops.gitbook.io/xmf-cookbook/)
 
 Copyright © 2013-2018 XOOPS Project \([www.xoops.org](https://xoops.org)\)
 
