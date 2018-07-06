@@ -5,7 +5,7 @@
 
 ## View it on: [![Gitbook](https://xoops.org/images/logoGitbookSmall.png)](https://www.gitbook.com/book/xoops/xmf-cookbook/) 
 
-Copyright © 2013-2016 XOOPS Project ([www.xoops.org](https://xoops.org))
+Copyright © 2013-2018 XOOPS Project ([www.xoops.org](http://xoops.org))
 
 
 ##License:

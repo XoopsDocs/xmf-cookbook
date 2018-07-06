@@ -47,6 +47,8 @@
         * Generate a Search Summary
     * [Highlighting Content](book/recipes/highlight.md)
 * [Reference](book/reference/README.md)
+    * [Assert](book/assert/README.md)
+        * [Assertions](book/assert/assert.md)
     * [Database](book/database/README.md)
         * [Migrate](book/database/migrate.md)
         * [TableLoad](book/database/tableload.md)
@@ -89,5 +91,6 @@
     * [Random](book/random/README.md)
     * [Request](book/request/README.md)
     * [StopWords](book/stopwords/README.md)
+    * [Uuid](book/uuid/README.md)
     * [Yaml](book/yaml/README.md)
 * [Credits](book/credits.md)

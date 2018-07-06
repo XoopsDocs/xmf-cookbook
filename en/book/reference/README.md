@@ -1,9 +1,11 @@
 ## Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.0.
+This is a detailed overview of all of the XMF classes as of release 1.2.12.
 
 ### Contents
 
+* [Assert](../assert/README.md)
+    * [Assertions](../assert/assert.md)
 * [Database](../database/README.md)
     * [TableLoad](../database/tableload.md)
     * [Tables](../database/tables.md)
@@ -45,4 +47,5 @@ This is a detailed overview of all of the XMF classes as of release 1.0.
 * [Random](../random/README.md)
 * [Request](../request/README.md)
 * [StopWords](../stopwords/README.md)
+* [Uuid](../uuid/README.md)
 * [Yaml](../yaml/README.md)

@@ -18,13 +18,16 @@ that can be inferred.
 Creates the permission helper for the module specified by name as *$dirname*.
 If the string *$dirname* is empty, the current module in XOOPS will be user.
 
-### checkPermission(*$gperm_name*, *$gperm_itemid*)
+### checkPermission(*$gperm_name*, *$gperm_itemid*, *$trueifadmin*)
 
 Check if the user has the permission named *$gperm_name* for the item identified by *$gperm_itemid*.
 
+Normally an admin user always has permission. If *$trueifadmin*, an optional boolean, is
+specified as *false*, the admin user's permissions will be checked like any normal user.
+
 Returns true if the user has the permission, otherwise false.
 
-### checkPermissionRedirect(*$gperm_name*, *$gperm_itemid*, *$url*, *$time*, *$message*)
+### checkPermissionRedirect(*$gperm_name*, *$gperm_itemid*, *$url*, *$time*, *$message*, *$trueifadmin*)
 
 Check if the user has the permission named *$gperm_name* for the item identified by *$gperm_itemid*.
 If not, the session will be redirected to the module relative URL specified in *$url* with the
@@ -34,6 +37,9 @@ message in *$message*.
 
 Get array of groups granted permissions for the permission named *$gperm_name* for the item
 identified by *$gperm_itemid*.
+
+Normally an admin user always has permission. If *$trueifadmin*, an optional boolean, is
+specified as *false*, the admin user's permissions will be checked like any normal user.
 
 Returns an array of integer group ids.
 

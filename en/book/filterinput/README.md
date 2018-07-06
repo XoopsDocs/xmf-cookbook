@@ -14,10 +14,18 @@ Clean the *$source*, a string or array of values, processing to remove XSS and o
 
 Returns the *cleaned* version of *$source*.
 
-### FilterInput:clean(*$source*, *$type*)
+### FilterInput::clean(*$source*, *$type*)
 
-Cleans the input *$source* removing XSS and other *bad* code. Also, filters the input, conforming to
-the specified *$type*. 'STRING' is the default *$type*.
+Cleans the input *$source* removing XSS and other *bad* code using the defaults.
+Also, filters the input, conforming to the specified *$type*. 'STRING' is the default *$type*.
+
+Available type are the same as documented with the cleanVar() method.
+
+### cleanVar(*$source*, *$type*)
+
+Cleans the input *$source* with rules established when the instance of FilterInput
+was instantiated. Also, filters the input, conforming it to the specified *$type*.
+'STRING' is the default *$type*.
 
 Available type are:
 
