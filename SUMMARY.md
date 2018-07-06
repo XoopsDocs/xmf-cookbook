@@ -8,44 +8,18 @@
   * [Forward Compatibility](en/book/ingredients/compatibility.md)
 * [Recipes](en/book/recipes/README.md)
   * [Introducing Module Helpers](en/book/recipes/modhelper.md)
-    * Simplify Reading Module Configs
-    * Easy Access to Module Object
   * [Using the Permission Helper](en/book/recipes/permission.md)
     * [Checking Permissions](en/book/recipes/perm-check.md)
-      * Does the User Have Permission for an Item?
-      * Leave if the User Does Not Have Permission
     * [Managing Item Permissions](en/book/recipes/perm-form.md)
-      * Assign Permissions to an Item From a Form
-      * Clean Up Permissions When an Item is Deleted
   * [Using the Session Helper](en/book/recipes/session.md)
-    * Save and Retrieve Context
   * [Using JSON Web Tokens](en/book/recipes/jsonwebtokens.md)
-    * Ajax Protection with JWT
   * [Altering Database Tables](en/book/recipes/dbtables.md)
-    * Rename a Database Table
-    * Add a Column to a Table
   * [Migrating a Module's Database](en/book/recipes/migrations.md)
-    * Generate a Schema Definition
-    * Basic Synchronization
-    * Rename a Set of Tables
-    * Convert a Changed Column
   * [Loading Initial Data](en/book/recipes/loaddata.md)
-    * Simple Table Loading
-    * Apply a Transform
-    * Save Table Data in YAML
-    * Case Study
   * [Module Admin Pages](en/book/recipes/modadmin.md)
     * [Hide and Seek with Icons](en/book/recipes/modadm-icons.md)
-      * Where are the icons?
-      * menu.php icons
     * [Standard Admin Pages](en/book/recipes/modadm-pages.md)
-      * index.php conversion
-      * pages.php conversion
   * [Manage Metadata](en/book/recipes/metagen.md)
-    * SEO Slugs
-    * Generate a Teaser
-    * Generate Keyword Lists
-    * Generate a Search Summary
   * [Highlighting Content](en/book/recipes/highlight.md)
 * [Reference](en/book/reference.md)
   * [Assert](en/book/assert/README.md)
