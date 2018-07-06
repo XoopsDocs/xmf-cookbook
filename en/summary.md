@@ -18,7 +18,7 @@
       * Clean Up Permissions When an Item is Deleted
   * [Using the Session Helper](book/recipes/session.md)
     * Save and Retrieve Context
-  * [Use JSON Web Tokens](book/recipes/jsonwebtokens.md)
+  * [Using JSON Web Tokens](book/recipes/jsonwebtokens.md)
     * Ajax Protection with JWT
   * [Altering Database Tables](book/recipes/dbtables.md)
     * Rename a Database Table
