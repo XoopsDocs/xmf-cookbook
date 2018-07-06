@@ -1,37 +1,30 @@
-## Table Operations
+# tables-tableops
 
-### renameTable(*$table*, *$newName*)
+## renameTable\(_$table_, _$newName_\)
 
-Queue instruction needed to rename a table named *$table* to *$newName* to the work queue.
+Queue instruction needed to rename a table named _$table_ to _$newName_ to the work queue.
 
-Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
-and getLastErrNo().
+Returns _true_ on success, or _false_ on error. Additional information may be available using getLastError\(\) and getLastErrNo\(\).
 
-### setTableOptions(*$table*, *$options*)
+## setTableOptions\(_$table_, _$options_\)
 
-Queue instruction needed to alter the table named *$table* with attributes specified in *$options*
-to the work queue.
+Queue instruction needed to alter the table named _$table_ with attributes specified in _$options_ to the work queue.
 
-An example of *$options* is `"ENGINE=MyISAM DEFAULT CHARSET=utf8")`.
+An example of _$options_ is `"ENGINE=MyISAM DEFAULT CHARSET=utf8")`.
 
-Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
-and getLastErrNo().
+Returns _true_ on success, or _false_ on error. Additional information may be available using getLastError\(\) and getLastErrNo\(\).
 
-### dropTable(*$table*)
+## dropTable\(_$table_\)
 
-Queue instruction needed to drop the table named *$table* to the work queue.
+Queue instruction needed to drop the table named _$table_ to the work queue.
 
-Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
-and getLastErrNo().
+Returns _true_ on success, or _false_ on error. Additional information may be available using getLastError\(\) and getLastErrNo\(\).
 
-### copyTable(*$table*, *$newTable*, *$withData*)
+## copyTable\(_$table_, _$newTable_, _$withData_\)
 
-Loads schema for a table named *$table* from database, and adds a new table named *$newTable* with that
-same schema to the queue.
+Loads schema for a table named _$table_ from database, and adds a new table named _$newTable_ with that same schema to the queue.
 
-If *$withData* is specified as true, the table will be copied with data, otherwise only the structure
-will be duplicated.
+If _$withData_ is specified as true, the table will be copied with data, otherwise only the structure will be duplicated.
 
-Returns *true* on success, or *false* on error. Additional information may be available using getLastError()
-and getLastErrNo().
+Returns _true_ on success, or _false_ on error. Additional information may be available using getLastError\(\) and getLastErrNo\(\).
 

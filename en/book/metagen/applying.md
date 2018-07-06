@@ -1,33 +1,28 @@
-## Applying Metadata to an HTML document
+# applying
 
-### Metagen::assignTitle(*$title*);
+## Metagen::assignTitle\(_$title_\);
 
-Set the page *title* tag to *$title*.
+Set the page _title_ tag to _$title_.
 
-### Metagen::assignKeywords(*$keywords*)
+## Metagen::assignKeywords\(_$keywords_\)
 
-Set the meta *keywords* tag with using the array of keywords in *$keywords*.
+Set the meta _keywords_ tag with using the array of keywords in _$keywords_.
 
+## Metagen::assignDescription\(_$description_\)
 
-### Metagen::assignDescription(*$description*)
+Set the meta _description_ tag to _$description_.
 
-Set the meta *description* tag to *$description*.
-
-### Metagen::generateMetaTags(*$title*, *$body*)
+## Metagen::generateMetaTags\(_$title_, _$body_\)
 
 Full form:
 
 `Metagen::generateMetaTags(*$title*, *$body*, *$count*, *$minLength*, *$wordCount*, *$forceKeys*)`
 
-Generate and assign title, keywords and description meta tags, taking the title from *$title*, extracting
-the keywords and description from *$body*.
+Generate and assign title, keywords and description meta tags, taking the title from _$title_, extracting the keywords and description from _$body_.
 
-The maximum number of key words is *$count*, which defaults to 20.
-Only words at least *$minlen*, which defaults to 4, will be considered.
+The maximum number of key words is _$count_, which defaults to 20. Only words at least _$minlen_, which defaults to 4, will be considered.
 
-No more than *$wordCount* words, default is 100, will be included in the description.
+No more than _$wordCount_ words, default is 100, will be included in the description.
 
-If specified, the array of words in *$forceKeys* will be used as keywords. Those words will count
-toward the *$count*.
-
+If specified, the array of words in _$forceKeys_ will be used as keywords. Those words will count toward the _$count_.
 
