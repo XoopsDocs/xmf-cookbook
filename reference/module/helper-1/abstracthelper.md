@@ -8,7 +8,11 @@ Instantiate a XoopsModule object for the helper to use. If the string _$dirname_
 
 ## init\(\)
 
-init\(\) is called by the construct after the appropriate XoopsModule object is loaded.
+init\(\) is called by the constructor after the appropriate XoopsModule object is loaded.
+
+## dirname\(\)
+
+Returns the module dirname associated with the helper.
 
 ## setDebug\(_$bool_\)
 
