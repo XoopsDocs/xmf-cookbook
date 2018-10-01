@@ -1,6 +1,6 @@
 # Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.2.14.
+This is a detailed overview of all of the XMF classes as of release 1.2.15.
 
 ## Contents
 
@@ -49,4 +49,3 @@ This is a detailed overview of all of the XMF classes as of release 1.2.14.
 * [StopWords](stopwords.md)
 * [Uuid](uuid.md)
 * [Yaml](yaml.md)
-

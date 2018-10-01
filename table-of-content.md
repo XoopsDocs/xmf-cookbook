@@ -94,5 +94,3 @@
   * [Uuid](reference/uuid.md)
   * [Yaml](reference/yaml.md)
 * [Credits](credits.md)
-* test
-
