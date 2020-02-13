@@ -1,6 +1,6 @@
 # Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.2.18.
+This is a detailed overview of all of the XMF classes as of release 1.2.19.
 
 ## Contents
 
@@ -44,6 +44,7 @@ This is a detailed overview of all of the XMF classes as of release 1.2.18.
     * [GenericHelper](module/helper-1/generichelper.md)
     * [Permission](module/helper-1/permission.md)
     * [Session](module/helper-1/session.md)
+* [ProxyCheck](proxycheck.md)
 * [Random](random.md)
 * [Request](request.md)
 * [StopWords](stopwords.md)

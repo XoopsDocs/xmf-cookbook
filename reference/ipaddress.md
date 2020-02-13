@@ -40,3 +40,4 @@ In addition to a differing subnet, a _false_ return can indicate that the IP add
 
 NB - Subnet matching has been used historically to verify that a consistent IP address was associated with each transaction for a session. As the Internet has evolved, this type of technique becomes less and less useful, and can be quite unfriendly to visitors. Developments such as the proliferation of mobile devices, NAT and Proxy networks, and privacy techniques such as TOR, all make it very likely to see large changes in the reported client IP address from a single user session in a short amount of time. Use with caution for well defined purposes.
 
+If your XOOPS is behind a proxy, you probably want to configure [ProxyCheck](proxycheck.md) to report the client address.
