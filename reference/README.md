@@ -7,6 +7,7 @@ This is a detailed overview of all of the XMF classes as of release 1.2.20.
 * [Assert]()
   * [Assertions](assert/assertions.md)
 * [Database]()
+  * [Migrate](database/migrate.md)
   * [TableLoad](database/tableload.md)
   * [Tables](database/tables/)
     * [Getting Started](database/tables/getting-started.md)
