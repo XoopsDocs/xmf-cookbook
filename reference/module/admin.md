@@ -87,6 +87,10 @@ Return HTML string of rendered index page for admin
 
 Display the rendered index page for admin
 
+### renderNavigation\(_$menu_\)
+
+Return HTML string of rendered navigation menu  for the page _$menu_
+
 ### displayNavigation\(_$menu_\)
 
 Display the navigation menu for the page _$menu_
