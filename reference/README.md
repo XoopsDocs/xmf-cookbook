@@ -1,6 +1,6 @@
 # Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.2.25.
+This is a detailed overview of all of the XMF classes as of release 1.2.26.
 
 ## Contents
 
