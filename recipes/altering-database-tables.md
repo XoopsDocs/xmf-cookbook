@@ -45,7 +45,7 @@ function xoops_module_update_pedigree()
     if($tables->useTable('eigenaar')) { // if this returns false, there is no table
         $tables->renameTable('eigenaar', 'pedigree_owner');
         if(!$tables->executeQueue()) {
-            echo '<br />' . _AM_PED_UPGRADEFAILED  . ' ' . $migrate->getLastError();
+            echo '<br />' . _AM_PED_UPGRADEFAILED  . ' ' . $tables->getLastError();
         }
     }
 }
@@ -63,7 +63,7 @@ function xoops_module_update_pedigree()
         $tables->renameTable('eigenaar', 'pedigree_owner');
         $tables->addColumn('pedigree_owner', 'registrar_code', "varchar(24) NOT NULL DEFAULT ''");
         if(!$tables->executeQueue()) {
-            echo '<br />' . _AM_PED_UPGRADEFAILED  . ' ' . $migrate->getLastError();
+            echo '<br />' . _AM_PED_UPGRADEFAILED  . ' ' . $tables->getLastError();
         }
     }
 }
