@@ -4,7 +4,7 @@
 
 ## The XMF \(XOOPS Module Framework\) Cookbook
 
-Copyright © 2013-2018 XOOPS Project \([www.xoops.org](https://xoops.org)\)
+Copyright © 2013-2023 XOOPS Project \([www.xoops.org](https://xoops.org)\)
 
 ### License:
 
