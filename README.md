@@ -3,6 +3,7 @@
 ![logoXoops.jpg](.gitbook/assets/logoxoops.jpg)
 
 ## The XMF \(XOOPS Module Framework\) Cookbook
+**Version 1.2.28**
 
 ### View it on: [![Gitbook](https://xoops.org/images/logoGitbookSmall.png)](https://xoops.gitbook.io/xmf-cookbook/)
 

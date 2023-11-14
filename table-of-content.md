@@ -46,6 +46,7 @@
     * Generate Keyword Lists
     * Generate a Search Summary
   * [Highlighting Content](recipes/highlighting-content.md)
+  * [Using ULID](recipes/using-ulid.md)
 * [Reference](reference/)
   * [Assert](reference/assert/)
     * [Assertions](reference/assert/assertions.md)
@@ -92,6 +93,7 @@
   * [Random](reference/random.md)
   * [Request](reference/request.md)
   * [StopWords](reference/stopwords.md)
+  * [Ulid](reference/ulid.md) 
   * [Uuid](reference/uuid.md)
   * [Yaml](reference/yaml.md)
 * [Credits](credits.md)

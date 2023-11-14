@@ -1,6 +1,6 @@
 # Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.2.26.
+This is a detailed overview of all of the XMF classes as of release 1.2.28.
 
 ## Contents
 
@@ -49,5 +49,6 @@ This is a detailed overview of all of the XMF classes as of release 1.2.26.
 * [Random](random.md)
 * [Request](request.md)
 * [StopWords](stopwords.md)
+* [Ulid](ulid.md) 
 * [Uuid](uuid.md)
 * [Yaml](yaml.md)
