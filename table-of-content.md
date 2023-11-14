@@ -88,11 +88,10 @@
       * [GenericHelper](reference/module/helper-1/generichelper.md)
       * [Permission](reference/module/helper-1/permission.md)
       * [Session](reference/module/helper-1/session.md)
+  * [ProxyCheck](reference/proxycheck.md)
   * [Random](reference/random.md)
   * [Request](reference/request.md)
   * [StopWords](reference/stopwords.md)
   * [Uuid](reference/uuid.md)
   * [Yaml](reference/yaml.md)
 * [Credits](credits.md)
-* test
-

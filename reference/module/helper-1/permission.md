@@ -20,6 +20,10 @@ Normally an admin user always has permission. If _$trueifadmin_, an optional boo
 
 Returns true if the user has the permission, otherwise false.
 
+## getItemIds(_$gperm\_name_, _$gperm\_groupid_)
+
+Returns an array of items for which the group(s) specified in _$gperm\_groupid_ have the permission named in _$gperm\_name_.
+
 ## checkPermissionRedirect\(_$gperm\_name_, _$gperm\_itemid_, _$url_, _$time_, _$message_, _$trueifadmin_\)
 
 Check if the user has the permission named _$gperm\_name_ for the item identified by _$gperm\_itemid_. If not, the session will be redirected to the module relative URL specified in _$url_ with the message in _$message_.

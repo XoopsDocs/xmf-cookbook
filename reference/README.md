@@ -1,12 +1,13 @@
 # Reference
 
-This is a detailed overview of all of the XMF classes as of release 1.2.14.
+This is a detailed overview of all of the XMF classes as of release 1.2.26.
 
 ## Contents
 
 * [Assert]()
   * [Assertions](assert/assertions.md)
 * [Database]()
+  * [Migrate](database/migrate.md)
   * [TableLoad](database/tableload.md)
   * [Tables](database/tables/)
     * [Getting Started](database/tables/getting-started.md)
@@ -44,9 +45,9 @@ This is a detailed overview of all of the XMF classes as of release 1.2.14.
     * [GenericHelper](module/helper-1/generichelper.md)
     * [Permission](module/helper-1/permission.md)
     * [Session](module/helper-1/session.md)
+* [ProxyCheck](proxycheck.md)
 * [Random](random.md)
 * [Request](request.md)
 * [StopWords](stopwords.md)
 * [Uuid](uuid.md)
 * [Yaml](yaml.md)
-

@@ -54,3 +54,10 @@ Returns an absolute filesystem path for a module relative path specified in _$pa
 
 Redirects the session within the same module, to the module relative URL specified in _$url_.
 
+## uploadUrl\(_$url_\)
+
+Return absolute URL for a module relative upload file specified in _$url_.
+
+## uploadPath\( string $path = '' \)
+
+Return absolute filesystem path for a module relative upload file specified in _$path_.
