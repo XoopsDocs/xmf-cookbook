@@ -3,15 +3,16 @@
 ![logoXoops.jpg](.gitbook/assets/logoxoops.jpg)
 
 ## The XMF \(XOOPS Module Framework\) Cookbook
+**Version 1.2.28**
 
 ### View it on: [![Gitbook](https://xoops.org/images/logoGitbookSmall.png)](https://xoops.gitbook.io/xmf-cookbook/)
 
-Copyright © 2013-2020 XOOPS Project \([xoops.org](https://xoops.org)\)
+Copyright © 2013-2023 XOOPS Project \([www.xoops.org](https://xoops.org)\)
 
 ### License:
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
 Unless otherwise specified, this content is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-All derivative works are to be attributed to XOOPS Project \([xoops.org](https://xoops.org)\)
+All derivative works are to be attributed to XOOPS Project \([www.xoops.org](https://xoops.org)\)
 
